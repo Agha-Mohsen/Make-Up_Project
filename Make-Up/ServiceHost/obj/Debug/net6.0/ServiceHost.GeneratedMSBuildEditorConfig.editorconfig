@@ -23,6 +23,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Areas/Administration/Pages/Shared/_Menu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcU2hhcmVkXF9NZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Areas/Administration/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -37,6 +41,42 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Areas/Administration/Pages/Shop/ProductCategories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcU2hvcFxQcm9kdWN0Q2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Areas/Administration/Pages/Shop/ProductPicture/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcU2hvcFxQcm9kdWN0UGljdHVyZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Areas/Administration/Pages/Shop/ProductPicture/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcU2hvcFxQcm9kdWN0UGljdHVyZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Areas/Administration/Pages/Shop/ProductPicture/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcU2hvcFxQcm9kdWN0UGljdHVyZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Areas/Administration/Pages/Shop/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcU2hvcFxQcm9kdWN0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Areas/Administration/Pages/Shop/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcU2hvcFxQcm9kdWN0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Areas/Administration/Pages/Shop/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcU2hvcFxQcm9kdWN0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Areas/Administration/Pages/Shop/Slides/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcU2hvcFxTbGlkZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Areas/Administration/Pages/Shop/Slides/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcU2hvcFxTbGlkZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Areas/Administration/Pages/Shop/Slides/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcU2hvcFxTbGlkZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Areas/Administration/Pages/_ViewImports.cshtml]

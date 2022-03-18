@@ -6,13 +6,22 @@ using ShopManagement.Domain.ProductCategoryAgg;
 
 namespace ShopManagement.Infrastructure.EFCore.Repository
 {
-    public class ProductCategoryRepository : RepositoryBase<long , ProductCategory>, IProductCategoryRepository 
+    public class ProductCategoryRepository : RepositoryBase<long, ProductCategory>, IProductCategoryRepository
     {
         private readonly ShopContext _context;
 
-        public ProductCategoryRepository(ShopContext context) : base(context)  
+        public ProductCategoryRepository(ShopContext context) : base(context)
         {
             _context = context;
+        }
+
+        public List<ProductCategoryViewModel> GetProductCategories()
+        {
+            return _context.ProductCategories.Select(x => new ProductCategoryViewModel
+            {
+                Id = x.Id,
+                Name = x.Name
+            }).ToList();
         }
 
         public EditProductCategory GetDetails(long id)
@@ -45,7 +54,6 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 query = query.Where(x => x.Name.Contains(searchModel.Name)).ToList();
 
             return query.OrderByDescending(x => x.Id).ToList();
-
         }
     }
 }

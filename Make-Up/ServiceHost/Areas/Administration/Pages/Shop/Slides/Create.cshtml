@@ -1,0 +1,77 @@
+﻿@model ShopManagement.Application.Contracts.Slide.CreateSlide
+@{
+}
+<div class = "modal-header">
+    <button aria-hidden = "true" class = "close" data-dismiss = "modal" type = "button">×</button>
+    <h4 class = "modal-title">ایجاد اسلاید جدید</h4>
+</div>
+
+<form asp-page = "./Index" asp-page-handler = "Create"
+      data-action = "Refresh"
+      data-ajax = "true"
+      data-callback = ""
+      method = "post">
+    <div class = "modal-body">
+        <div class = "row">
+            <div class = "col-md-12">
+                <div class = "form-group">
+                    <label asp-for = "Picture" class = "control-label">عکس</label>
+                    <input asp-for = "Picture" class = "form-control" type = "text"/>
+                    <span asp-validation-for = "Picture" class = "error"></span>
+                </div>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-6">
+                <div class = "form-group">
+                    <label asp-for = "PictureAlt" class = "control-label">Alt</label>
+                    <input asp-for = "PictureAlt" class = "form-control" type = "text">
+                    <span asp-validation-for = "PictureAlt" class = "error"></span>
+                </div>
+            </div>
+            <div class = "col-md-6">
+                <div class = "form-group">
+                    <label asp-for = "PictureTitle" class = "control-label">عنوان عکس</label>
+                    <input asp-for = "PictureTitle" class = "form-control" type = "text">
+                    <span asp-validation-for = "PictureTitle" class = "error"></span>
+                </div>
+            </div>
+        </div> 
+        <div class = "row">
+            <div class = "col-md-6">
+                <div class = "form-group">
+                    <label asp-for = "Heading" class = "control-label">سرتیتر</label>
+                    <input asp-for = "Heading" class = "form-control" type = "text">
+                    <span asp-validation-for = "Heading" class = "error"></span>
+                </div>
+            </div>
+            <div class = "col-md-6">
+                <div class = "form-group">
+                    <label asp-for = "Title" class = "control-label">عنوان </label>
+                    <input asp-for = "Title" class = "form-control" type = "text">
+                    <span asp-validation-for = "Title" class = "error"></span>
+                </div>
+            </div>
+        </div> 
+        <div class = "row">
+            <div class = "col-md-6">
+                <div class = "form-group">
+                    <label asp-for = "Text" class = "control-label">متن </label>
+                    <input asp-for = "Text" class = "form-control" type = "text">
+                    <span asp-validation-for = "Text" class = "error"></span>
+                </div>
+            </div>
+            <div class = "col-md-6">
+                <div class = "form-group">
+                    <label asp-for = "BtnText" class = "control-label">متن دکمه</label>
+                    <input asp-for = "BtnText" class = "form-control" type = "text">
+                    <span asp-validation-for = "BtnText" class = "error"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "modal-footer">
+        <button class = "btn btn-default waves-effect" data-dismiss = "modal" type = "button">بستن</button>
+        <button class = "btn btn-info waves-effect waves-light" type = "submit">ایجاد</button>
+    </div>
+</form>
