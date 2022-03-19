@@ -21,3 +21,5 @@ C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configurat
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\obj\Debug\net5.0\ref\ShopManagement.Configuration.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\01-MakeUpQuery.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\01-MakeUpQuery.pdb

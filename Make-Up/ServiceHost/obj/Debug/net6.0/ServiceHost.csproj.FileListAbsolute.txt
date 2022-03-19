@@ -274,3 +274,5 @@ C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ServiceHost\bin\Debug\net
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ServiceHost\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ServiceHost\bin\Debug\net6.0\runtimes\win-arm\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ServiceHost\bin\Debug\net6.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ServiceHost\bin\Debug\net6.0\01-MakeUpQuery.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ServiceHost\bin\Debug\net6.0\01-MakeUpQuery.pdb
