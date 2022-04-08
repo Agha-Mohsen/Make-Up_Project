@@ -916,11 +916,11 @@
           "lib/net6.0/Microsoft.DotNet.Scaffolding.Shared.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/5.0.14": {
+      "Microsoft.EntityFrameworkCore/5.0.15": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.14",
-          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.14",
+          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.15",
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.15",
           "Microsoft.Extensions.Caching.Memory": "5.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.2",
           "Microsoft.Extensions.Logging": "5.0.0",
@@ -935,7 +935,7 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/5.0.14": {
+      "Microsoft.EntityFrameworkCore.Abstractions/5.0.15": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
@@ -944,7 +944,7 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/5.0.14": {
+      "Microsoft.EntityFrameworkCore.Analyzers/5.0.15": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -970,10 +970,10 @@
           "build/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/5.0.14": {
+      "Microsoft.EntityFrameworkCore.Relational/5.0.15": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.14",
+          "Microsoft.EntityFrameworkCore": "5.0.15",
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0"
         },
         "compile": {
@@ -983,11 +983,11 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.SqlServer/5.0.14": {
+      "Microsoft.EntityFrameworkCore.SqlServer/5.0.15": {
         "type": "package",
         "dependencies": {
           "Microsoft.Data.SqlClient": "2.0.1",
-          "Microsoft.EntityFrameworkCore.Relational": "5.0.14"
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.15"
         },
         "compile": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
@@ -3350,6 +3350,80 @@
           "bin/placeholder/0_Framework.dll": {}
         }
       },
+      "DiscountManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DiscountManagement.Application.Contract": "1.0.0",
+          "DiscountManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Application.dll": {}
+        }
+      },
+      "DiscountManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "ShopManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Application.Contract.dll": {}
+        }
+      },
+      "DiscountManagement.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DiscountManagement.Application": "1.0.0",
+          "DiscountManagement.Application.Contract": "1.0.0",
+          "DiscountManagement.Infrastructure.EFCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Configuration.dll": {}
+        }
+      },
+      "DiscountManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "DiscountManagement.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Domain.dll": {}
+        }
+      },
+      "DiscountManagement.Infrastructure.EFCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DiscountManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.15",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.15",
+          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Infrastructure.EFCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
       "ShopManagement.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -4445,45 +4519,45 @@
         "microsoft.dotnet.scaffolding.shared.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore/5.0.14": {
-      "sha512": "WP23yZ6WDKcLt+ddQCx1728JTHf+Yds9V8heMMY7VjlwGqTMxOYBGnaJ4KkSu/x7pBHGd6I9Vg70YBqUmjGVjg==",
+    "Microsoft.EntityFrameworkCore/5.0.15": {
+      "sha512": "ThCWW0PV3EgUtgOsSHyNsOdJCzMTAPLDf31CHV0YG3NA45vRNJYyas9JVwmQbNg3ZaFR5UOJd4XlaKBcHs10ZA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/5.0.14",
+      "path": "microsoft.entityframeworkcore/5.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.5.0.14.nupkg.sha512",
+        "microsoft.entityframeworkcore.5.0.15.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/5.0.14": {
-      "sha512": "yZmWL6mcd8dOrbJdym/T6jNpmZ3czjjv8Vq5KBd45/EzOzdFC0A9b4ZSqFVxc36HCwJdT+5hAwplJnb600ZHAA==",
+    "Microsoft.EntityFrameworkCore.Abstractions/5.0.15": {
+      "sha512": "dI4246ydDdlwgZJ/9XD+VN2NpnIN118hrupp5TS+vStPmHZrCEo5YLjn9yfch7uta4MtBrVdVDBq6dBNBFWD5w==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/5.0.14",
+      "path": "microsoft.entityframeworkcore.abstractions/5.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.5.0.14.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.5.0.15.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/5.0.14": {
-      "sha512": "Z9b4jHTwT1KshOJslNuW9fU7A86n48q1ysn5D6K023qCMw0/NwDvhqjSf/2lK0U0Tpgz3XBa2Tc51Yf20uZeNg==",
+    "Microsoft.EntityFrameworkCore.Analyzers/5.0.15": {
+      "sha512": "QfJBhr49Jmvt+zJf1VPSBPq2ZPY5PlpiDSF3UFV37joyKiWMDyEsNTHd3RLFzagC4k8cmSKTgk+7Y49XwDvPJQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/5.0.14",
+      "path": "microsoft.entityframeworkcore.analyzers/5.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.5.0.14.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.5.0.15.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
@@ -4502,31 +4576,31 @@
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Relational/5.0.14": {
-      "sha512": "bdoquudIyr1CtOHYhXh+twHj3AJ8ih+BBRjzZKv774ky5MqNiYnjMvrS2h1U1vgLMbagSIhkqhmpMkqhc0Lgbw==",
+    "Microsoft.EntityFrameworkCore.Relational/5.0.15": {
+      "sha512": "zE8zWanIxN2p9VyhtD6wFZrLEwqxJgBPzWJqF3r+ojzQtjMo+F9nKh36LpRUU8oeqHNXc7gZMPuGeGeYLCtV2g==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.relational/5.0.14",
+      "path": "microsoft.entityframeworkcore.relational/5.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.xml",
-        "microsoft.entityframeworkcore.relational.5.0.14.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.5.0.15.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.SqlServer/5.0.14": {
-      "sha512": "JTw4oJ7fa//hVaETu9UuUBH4DLngWV99Rbf1SOOtB+toLKQltfsLHnUu6CiSwH+MmnYd4rT+HMoxYEGov2sOHA==",
+    "Microsoft.EntityFrameworkCore.SqlServer/5.0.15": {
+      "sha512": "lFnEMvLufq3xIuhk3efmMUJvRNxOLlAKl8NNYqvbbtDZtzVdgZR/dZJAGcwZT6AxSGNM29LMDXYY+ydADWcggg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlserver/5.0.14",
+      "path": "microsoft.entityframeworkcore.sqlserver/5.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.SqlServer.xml",
-        "microsoft.entityframeworkcore.sqlserver.5.0.14.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlserver.5.0.15.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
@@ -10488,6 +10562,31 @@
       "path": "../0_Framework/0_Framework.csproj",
       "msbuildProject": "../0_Framework/0_Framework.csproj"
     },
+    "DiscountManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagement.Application/DiscountManagement.Application.csproj",
+      "msbuildProject": "../DiscountManagement.Application/DiscountManagement.Application.csproj"
+    },
+    "DiscountManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagement.Application.Contract/DiscountManagement.Application.Contract.csproj",
+      "msbuildProject": "../DiscountManagement.Application.Contract/DiscountManagement.Application.Contract.csproj"
+    },
+    "DiscountManagement.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagement.Configuration/DiscountManagement.Configuration.csproj",
+      "msbuildProject": "../DiscountManagement.Configuration/DiscountManagement.Configuration.csproj"
+    },
+    "DiscountManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagement.Domain/DiscountManagement.Domain.csproj",
+      "msbuildProject": "../DiscountManagement.Domain/DiscountManagement.Domain.csproj"
+    },
+    "DiscountManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagement.Infrastructure.EFCore/DiscountManagement.Infrastructure.EFCore.csproj",
+      "msbuildProject": "../DiscountManagement.Infrastructure.EFCore/DiscountManagement.Infrastructure.EFCore.csproj"
+    },
     "ShopManagement.Application/1.0.0": {
       "type": "project",
       "path": "../ShopManagement.Application/ShopManagement.Application.csproj",
@@ -10516,6 +10615,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DiscountManagement.Configuration >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.14",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.2",
       "ShopManagement.Configuration >= 1.0.0",
@@ -10549,6 +10649,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
+              "projectPath": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj"
+            },
             "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
               "projectPath": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj"
             },

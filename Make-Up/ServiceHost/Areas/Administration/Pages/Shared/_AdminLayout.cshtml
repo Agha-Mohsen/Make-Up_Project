@@ -25,6 +25,8 @@
 
     <link href = "~/AdminTheme/assets/sweet-alert/sweet-alert.min.css" rel = "stylesheet">
 
+    <link href = "~/AdminTheme/assets/css/persian-datepicker.min.css" rel = "stylesheet">
+
     <link href = "~/AdminTheme/assets/css/helper.css" rel = "stylesheet" type = "text/css"/>
     <link href = "~/AdminTheme/assets/css/style.css" rel = "stylesheet" type = "text/css"/>
 
@@ -36,128 +38,128 @@
 
 <div id = "wrapper">
 
-<div class = "topbar">
-    <div class = "topbar-left">
-        <div class = "text-center">
-            <a class = "logo" href = "index.html">
-                <i class = "md md-terrain"></i>
-                <span>Moltran </span>
-            </a>
+    <div class = "topbar">
+        <div class = "topbar-left">
+            <div class = "text-center">
+                <a class = "logo" href = "index.html">
+                    <i class = "md md-terrain"></i>
+                    <span>Moltran </span>
+                </a>
+            </div>
         </div>
-    </div>
-    <div class = "navbar navbar-default" role = "navigation">
-        <div class = "container">
-            <div class = "">
-                <div class = "pull-left">
-                    <button class = "button-menu-mobile open-left">
-                        <i class = "fa fa-bars"></i>
-                    </button>
-                    <span class = "clearfix"></span>
-                </div>
-                <form class = "navbar-form pull-left" role = "search">
-                    <div class = "form-group">
-                        <input class = "form-control search-bar" placeholder = "Type here for search..." type = "text">
+        <div class = "navbar navbar-default" role = "navigation">
+            <div class = "container">
+                <div class = "">
+                    <div class = "pull-left">
+                        <button class = "button-menu-mobile open-left">
+                            <i class = "fa fa-bars"></i>
+                        </button>
+                        <span class = "clearfix"></span>
                     </div>
-                    <button class = "btn btn-search" type = "submit">
-                        <i class = "fa fa-search"></i>
-                    </button>
-                </form>
+                    <form class = "navbar-form pull-left" role = "search">
+                        <div class = "form-group">
+                            <input class = "form-control search-bar" placeholder = "Type here for search..." type = "text">
+                        </div>
+                        <button class = "btn btn-search" type = "submit">
+                            <i class = "fa fa-search"></i>
+                        </button>
+                    </form>
 
-                <ul class = "nav navbar-nav navbar-right pull-right">
-                    <li class = "dropdown hidden-xs">
-                        <a aria-expanded = "true" class = "dropdown-toggle waves-effect waves-light" data-target = "#" data-toggle = "dropdown" href = "#">
-                            <i class = "md md-notifications"></i>
-                            <span class = "badge badge-xs badge-danger">3</span>
-                        </a>
-                        <ul class = "dropdown-menu dropdown-menu-lg">
-                            <li class = "text-center notifi-title">Notification</li>
-                            <li class = "list-group">
-                                <!-- list item-->
-                                <a class = "list-group-item" href = "javascript:void(0);">
-                                    <div class = "media">
-                                        <div class = "pull-left">
-                                            <em class = "fa fa-user-plus fa-2x text-info"></em>
+                    <ul class = "nav navbar-nav navbar-right pull-right">
+                        <li class = "dropdown hidden-xs">
+                            <a aria-expanded = "true" class = "dropdown-toggle waves-effect waves-light" data-target = "#" data-toggle = "dropdown" href = "#">
+                                <i class = "md md-notifications"></i>
+                                <span class = "badge badge-xs badge-danger">3</span>
+                            </a>
+                            <ul class = "dropdown-menu dropdown-menu-lg">
+                                <li class = "text-center notifi-title">Notification</li>
+                                <li class = "list-group">
+                                    <!-- list item-->
+                                    <a class = "list-group-item" href = "javascript:void(0);">
+                                        <div class = "media">
+                                            <div class = "pull-left">
+                                                <em class = "fa fa-user-plus fa-2x text-info"></em>
+                                            </div>
+                                            <div class = "media-body clearfix">
+                                                <div class = "media-heading">New user registered</div>
+                                                <p class = "m-0">
+                                                    <small>You have 10 unread messages</small>
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div class = "media-body clearfix">
-                                            <div class = "media-heading">New user registered</div>
-                                            <p class = "m-0">
-                                                <small>You have 10 unread messages</small>
-                                            </p>
+                                    </a>
+                                    <!-- list item-->
+                                    <a class = "list-group-item" href = "javascript:void(0);">
+                                        <div class = "media">
+                                            <div class = "pull-left">
+                                                <em class = "fa fa-diamond fa-2x text-primary"></em>
+                                            </div>
+                                            <div class = "media-body clearfix">
+                                                <div class = "media-heading">New settings</div>
+                                                <p class = "m-0">
+                                                    <small>There are new settings available</small>
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                                <!-- list item-->
-                                <a class = "list-group-item" href = "javascript:void(0);">
-                                    <div class = "media">
-                                        <div class = "pull-left">
-                                            <em class = "fa fa-diamond fa-2x text-primary"></em>
+                                    </a>
+                                    <!-- list item-->
+                                    <a class = "list-group-item" href = "javascript:void(0);">
+                                        <div class = "media">
+                                            <div class = "pull-left">
+                                                <em class = "fa fa-bell-o fa-2x text-danger"></em>
+                                            </div>
+                                            <div class = "media-body clearfix">
+                                                <div class = "media-heading">Updates</div>
+                                                <p class = "m-0">
+                                                    <small>
+                                                        There are
+                                                        <span class = "text-primary">2</span> new updates available
+                                                    </small>
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div class = "media-body clearfix">
-                                            <div class = "media-heading">New settings</div>
-                                            <p class = "m-0">
-                                                <small>There are new settings available</small>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- list item-->
-                                <a class = "list-group-item" href = "javascript:void(0);">
-                                    <div class = "media">
-                                        <div class = "pull-left">
-                                            <em class = "fa fa-bell-o fa-2x text-danger"></em>
-                                        </div>
-                                        <div class = "media-body clearfix">
-                                            <div class = "media-heading">Updates</div>
-                                            <p class = "m-0">
-                                                <small>
-                                                    There are
-                                                    <span class = "text-primary">2</span> new updates available
-                                                </small>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- last list item -->
-                                <a class = "list-group-item" href = "javascript:void(0);">
-                                    <small>See all notifications</small>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class = "dropdown">
-                        <a aria-expanded = "true" class = "dropdown-toggle profile" data-toggle = "dropdown" href = "">
-                            <img alt = "user-img" class = "img-circle" src = "~/AdminTheme/assets/images/avatar-1.jpg">
-                        </a>
-                        <ul class = "dropdown-menu">
-                            <li>
-                                <a href = "javascript:void(0)">
-                                    <i class = "md md-face-unlock"></i> Profile
-                                </a>
-                            </li>
-                            <li>
-                                <a href = "javascript:void(0)">
-                                    <i class = "md md-settings"></i> Settings
-                                </a>
-                            </li>
-                            <li>
-                                <a href = "javascript:void(0)">
-                                    <i class = "md md-lock"></i> Lock screen
-                                </a>
-                            </li>
-                            <li>
-                                <a href = "javascript:void(0)">
-                                    <i class = "md md-settings-power"></i> Logout
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                                    </a>
+                                    <!-- last list item -->
+                                    <a class = "list-group-item" href = "javascript:void(0);">
+                                        <small>See all notifications</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class = "dropdown">
+                            <a aria-expanded = "true" class = "dropdown-toggle profile" data-toggle = "dropdown" href = "">
+                                <img alt = "user-img" class = "img-circle" src = "~/AdminTheme/assets/images/avatar-1.jpg">
+                            </a>
+                            <ul class = "dropdown-menu">
+                                <li>
+                                    <a href = "javascript:void(0)">
+                                        <i class = "md md-face-unlock"></i> Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href = "javascript:void(0)">
+                                        <i class = "md md-settings"></i> Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href = "javascript:void(0)">
+                                        <i class = "md md-lock"></i> Lock screen
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href = "javascript:void(0)">
+                                        <i class = "md md-settings-power"></i> Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-    <partial name="_Menu" />
+    <partial name = "_Menu"/>
 
 </div>
 <div class = "content-page">
@@ -231,8 +233,18 @@
 
 <script src = "~/AdminTheme/assets/js/site.js"></script>
 
+<script src = "~/AdminTheme/assets/js/persian-date.min.js"></script>
+<script src = "~/AdminTheme/assets/js/persian-datepicker.min.js"></script>
+
+
 @await RenderSectionAsync("Scripts", false)
 
+<script>
+    $('.persianDateInput').persianDatepicker({
+        format: 'YYYY/MM/DD',
+        autoClose : true
+    });
+</script>
 
 </body>
 </html>
