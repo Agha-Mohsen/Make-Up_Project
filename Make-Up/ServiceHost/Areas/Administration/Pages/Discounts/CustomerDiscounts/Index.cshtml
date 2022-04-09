@@ -13,7 +13,7 @@
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
         <p class="pull-left">
             <a class="btn btn-success btn-lg" href="#showmodal=@Url.Page("./Index", "Create")">
-              تعریف تخفیف
+              تعریف تخفیف مشتری
             </a>
         </p>
     </div>
@@ -77,7 +77,7 @@
                                 <tr>
                                     <td>@item.Id</td>
                                     <td>@item.Product</td>
-                                    <td>@item.DiscountRate</td>
+                                    <td>@item.DiscountRate%</td>
                                     <td>@item.StartDate</td>
                                     <td>@item.EndDate</td>
                                     <td>@item.Reason</td>

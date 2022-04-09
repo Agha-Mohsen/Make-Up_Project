@@ -4,7 +4,6 @@ using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using DiscountManagement.Application.Contract.ColleagueDiscount;
 using DiscountManagement.Domain.ColleagueDiscountAgg;
-using Microsoft.EntityFrameworkCore;
 using ShopManagement.Infrastructure.EFCore;
 
 namespace DiscountManagement.Infrastructure.EFCore.Repository
@@ -24,7 +23,7 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
             return _context.ColleagueDiscount.Select(x => new EditColleagueDiscount
             {
                 Id = x.Id,
-                ProductId = x.DiscountRate,
+                ProductId = x.ProductId,
                 DiscountRate = x.DiscountRate
             }).FirstOrDefault(x => x.Id == id);
         }
@@ -37,6 +36,7 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
                 Id = x.Id,
                 DiscountRate = x.DiscountRate,
                 ProductId = x.ProductId,
+                IsRemoved = x.IsRemoved,
                 CreationDate = x.CreationDate.ToFarsi()
             });
 

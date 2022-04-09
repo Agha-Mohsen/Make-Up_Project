@@ -1,4 +1,6 @@
-﻿namespace DiscountManagement.Application.Contract.ColleagueDiscount
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+
+namespace DiscountManagement.Application.Contract.ColleagueDiscount
 {
     public class ColleagueDiscountViewModel
     {
@@ -6,6 +8,7 @@
         public long ProductId { get; set; }
         public int DiscountRate { get; set; }
         public string Product { get; set; }
+        public bool IsRemoved { get; set; } 
         public string CreationDate { get; set; }    
     }
 }
