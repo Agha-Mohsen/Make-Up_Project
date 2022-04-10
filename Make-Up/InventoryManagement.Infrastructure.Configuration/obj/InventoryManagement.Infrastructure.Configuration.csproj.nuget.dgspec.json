@@ -90,6 +90,9 @@
             "projectReferences": {
               "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\0_Framework\\0_Framework.csproj": {
                 "projectPath": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\0_Framework\\0_Framework.csproj"
+              },
+              "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }

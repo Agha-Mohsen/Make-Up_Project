@@ -10,8 +10,6 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.ColleagueDiscounts
     //[Authorize(Roles = Roles.Administator)]
     public class IndexModel : PageModel
     {
-        [TempData]
-        public string Message { get; set; }
         public ColleagueDiscountSearchModel SearchModel;
         public List<ColleagueDiscountViewModel> ColleagueDiscounts;
         public SelectList Products;

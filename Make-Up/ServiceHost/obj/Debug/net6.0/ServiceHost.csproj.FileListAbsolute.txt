@@ -294,3 +294,5 @@ C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ServiceHost\bin\Debug\net
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ServiceHost\bin\Debug\net6.0\InventoryManagement.Application.Contract.pdb
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ServiceHost\bin\Debug\net6.0\InventoryManagement.Domain.pdb
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ServiceHost\bin\Debug\net6.0\InventoryManagement.Infrastructure.EFCore.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ServiceHost\bin\Debug\net6.0\InventoryManagement.Application.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ServiceHost\bin\Debug\net6.0\InventoryManagement.Application.pdb

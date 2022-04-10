@@ -36,21 +36,16 @@
             </div>
         </div>
         <div class = "row">
-            <div class = "col-md-6">
-                <div class = "form-group">
-                    <label asp-for = "Picture" class = "control-label">قیمت واحد </label>
-                    <input asp-for = "UnitPrice" class = "form-control" type = "text"/>
-                    <span asp-validation-for = "Picture" class = "error"></span>
-                </div>
-            </div>
-            <div class = "col-md-6">
-                <div class = "form-group">
-                    <label  class = "control-label" asp-for="CategoryId">گروه محصول</label>
-                    <select  class = "form-control" type = "text" asp-for="CategoryId"
-                            asp-items='new SelectList(Model.Categories , "Id" , "Name")'>
-                        <option value="0" >گروه محصول</option>
+            <div class = "row">
+                <div class = "col-md-12">
+                    <div class = "form-group">
+                        <label  class = "control-label" asp-for="CategoryId">گروه محصول</label>
+                        <select  class = "form-control" type = "text" asp-for="CategoryId"
+                                 asp-items='new SelectList(Model.Categories , "Id" , "Name")'>
+                            <option value="0" >گروه محصول</option>
+                        </select>
                         <span asp-validation-for = "CategoryId" class = "error"></span>
-                    </select>
+                    </div>
                 </div>
             </div>
         </div>

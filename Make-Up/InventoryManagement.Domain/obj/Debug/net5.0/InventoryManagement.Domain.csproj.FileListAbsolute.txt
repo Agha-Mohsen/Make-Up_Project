@@ -15,3 +15,5 @@ C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domai
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\obj\Debug\net5.0\ref\InventoryManagement.Domain.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
