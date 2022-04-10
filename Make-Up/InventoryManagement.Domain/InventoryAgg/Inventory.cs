@@ -18,8 +18,13 @@ namespace InventoryManagement.Domain.InventoryAgg
             UnitPrice = unitPrice;
             InStock = false;
         }
+        public void EditInventory(long productId, double unitPrice)
+        {
+            ProductId = productId;
+            UnitPrice = unitPrice;
+        }
 
-        public long CalculateInventoryStock()
+        public long CalculateCurrentCount()
         {
             var plus = Operations.Where(x => x.Operation).Sum(x => x.Count);
             var min = Operations.Where(x => !x.Operation).Sum(x => x.Count);
@@ -28,15 +33,15 @@ namespace InventoryManagement.Domain.InventoryAgg
 
         public void Increase(long count, long operatorId, string description)
         {
-            var currentCount = CalculateInventoryStock() + count;
+            var currentCount = CalculateCurrentCount() + count;
             var operation = new InventoryOperation(true, count, operatorId, currentCount, description, 0, Id);
             Operations.Add(operation);
             InStock = currentCount > 0;
         }
 
-        public void Reduce(long count, long operatorId, string description)
+        public void Reduce(long count, long operatorId, string description  , long orderId)
         {
-            var currentCount = CalculateInventoryStock() - count;
+            var currentCount = CalculateCurrentCount() - count;
             var operation = new InventoryOperation(false, count, operatorId, currentCount, description, 0, Id);
             Operations.Add(operation);
             InStock = currentCount > 0;

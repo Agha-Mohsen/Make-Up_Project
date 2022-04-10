@@ -1,0 +1,17 @@
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Domain.deps.json
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Domain.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\bin\Debug\net5.0\ref\InventoryManagement.Domain.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\bin\Debug\net5.0\0_Framework.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\bin\Debug\net5.0\0_Framework.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.csproj.AssemblyReference.cache
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.AssemblyInfo.cs
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.csproj.CopyComplete
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\obj\Debug\net5.0\ref\InventoryManagement.Domain.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.pdb
