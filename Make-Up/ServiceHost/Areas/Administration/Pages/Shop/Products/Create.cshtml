@@ -27,6 +27,8 @@
                     <span asp-validation-for = "Code" class = "error"></span>
                 </div>
             </div>
+        </div>
+        <div class = "row">
             <div class = "col-md-6">
                 <div class = "form-group">
                     <label asp-for = "Slug" class = "control-label">اسلاگ</label>
@@ -34,14 +36,12 @@
                     <span asp-validation-for = "Slug" class = "error"></span>
                 </div>
             </div>
-        </div>
-        <div class = "row">
-            <div class = "col-md-12">
+            <div class = "col-md-6">
                 <div class = "form-group">
-                    <label  class = "control-label" asp-for="CategoryId">گروه محصول</label>
-                    <select  class = "form-control" type = "text" asp-for="CategoryId"
-                            asp-items='new SelectList(Model.Categories , "Id" , "Name")'>
-                        <option value="0" >گروه محصول</option>
+                    <label class = "control-label" asp-for = "CategoryId">گروه محصول</label>
+                    <select class = "form-control" type = "text" asp-for = "CategoryId"
+                            asp-items = 'new SelectList(Model.Categories, "Id", "Name")'>
+                        <option value = "0">گروه محصول</option>
                     </select>
                     <span asp-validation-for = "CategoryId" class = "error"></span>
                 </div>

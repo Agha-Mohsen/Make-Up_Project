@@ -5,6 +5,7 @@ using ShopManagement.Domain.ProductAgg;
 using System.Collections.Generic;
 using System.Linq;
 using _0_Framework.Application;
+using Newtonsoft.Json;
 
 namespace ShopManagement.Infrastructure.EFCore.Repository
 {
@@ -29,7 +30,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
         {
             return _context.Products.Select(x => new EditProduct
             {
-                Id = id,
+                Id = x.Id,
                 Name = x.Name,
                 Code = x.Code,
                 Description = x.Description,
@@ -44,6 +45,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Slug = x.Slug,
                 CategoryId = x.CategoryId
             }).FirstOrDefault(x => x.Id == id);
+
         }
 
         public List<ProductViewModel> Search(ProductSearchModel searchModel)

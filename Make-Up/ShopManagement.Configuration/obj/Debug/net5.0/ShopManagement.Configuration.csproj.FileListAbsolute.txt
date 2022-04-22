@@ -23,3 +23,15 @@ C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configurat
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.pdb
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\01-MakeUpQuery.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\01-MakeUpQuery.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Domain.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Domain.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb
