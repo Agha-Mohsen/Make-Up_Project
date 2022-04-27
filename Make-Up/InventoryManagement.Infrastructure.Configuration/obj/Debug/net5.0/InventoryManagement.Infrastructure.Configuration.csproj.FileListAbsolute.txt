@@ -4,12 +4,14 @@ C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infra
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.pdb
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\0_Framework.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Application.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\ShopManagement.Domain.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Application.pdb
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.pdb
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.pdb
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\0_Framework.pdb
@@ -25,5 +27,3 @@ C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infra
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\obj\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\obj\Debug\net5.0\ref\InventoryManagement.Infrastructure.Configuration.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\obj\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.pdb
-C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Application.dll
-C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Application.pdb

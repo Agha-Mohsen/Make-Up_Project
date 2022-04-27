@@ -22,18 +22,23 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             return _context.ProductsPictures.Select(x => new EditProductPicture
             {
                 Id = x.Id,
-                Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 ProductId = x.ProductId
             }).FirstOrDefault(x => x.Id == id);
         }
 
+        public ProductPicture GetWithProductAndCategory(long id)
+        {
+            return _context.ProductsPictures
+                .Include(productPicture => productPicture.Product)
+                .ThenInclude(product => product.Category)
+                .FirstOrDefault(productPicture => productPicture.Id == id);
+        }
+
         public List<ProductPictureViewModel> Search(ProductPictureSearchModel searchModel)
         {
-            var query = _context.ProductsPictures.
-                Include(x => x.Product).
-                Select(x => new ProductPictureViewModel
+            var query = _context.ProductsPictures.Include(x => x.Product).Select(x => new ProductPictureViewModel
             {
                 Id = x.Id,
                 Picture = x.Picture,
@@ -44,7 +49,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             }).ToList();
 
             if (searchModel.ProductId != 0)
-               query = query.Where(x => x.ProductId == searchModel.ProductId).ToList();
+                query = query.Where(x => x.ProductId == searchModel.ProductId).ToList();
 
             return query.OrderByDescending(x => x.Id).ToList();
         }

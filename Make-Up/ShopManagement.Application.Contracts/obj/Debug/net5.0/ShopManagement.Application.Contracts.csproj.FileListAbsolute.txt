@@ -2,14 +2,14 @@ C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Applicatio
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Application.Contracts\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Application.Contracts\bin\Debug\net5.0\ref\ShopManagement.Application.Contracts.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Application.Contracts\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Application.Contracts\bin\Debug\net5.0\0_Framework.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Application.Contracts\bin\Debug\net5.0\0_Framework.pdb
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.csproj.AssemblyReference.cache
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.AssemblyInfoInputs.cache
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.AssemblyInfo.cs
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.csproj.CopyComplete
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Application.Contracts\obj\Debug\net5.0\ref\ShopManagement.Application.Contracts.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.pdb
-C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Application.Contracts\bin\Debug\net5.0\0_Framework.dll
-C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Application.Contracts\bin\Debug\net5.0\0_Framework.pdb
-C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Application.Contracts\obj\Debug\net5.0\ShopManagement.Application.Contracts.csproj.CopyComplete

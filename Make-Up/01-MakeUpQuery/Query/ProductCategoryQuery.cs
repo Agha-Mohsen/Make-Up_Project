@@ -35,7 +35,7 @@ namespace _01_MakeUpQuery.Query
                 PictureAlt = productCategory.PictureAlt,
                 PictureTitle = productCategory.PictureTitle,
                 Slug = productCategory.Slug
-            }).ToList();
+            }).AsNoTracking().ToList();
         }
 
         public List<ProductCategoryQueryModel> GetProductCategoriesWithProducts()
@@ -55,7 +55,7 @@ namespace _01_MakeUpQuery.Query
                     Id = productCategory.Id,
                     Name = productCategory.Name,
                     Products = MapProducts(productCategory.Products)
-                }).ToList();
+                }).AsNoTracking().ToList();
 
             foreach (var category in categories)
             {
@@ -116,7 +116,7 @@ namespace _01_MakeUpQuery.Query
                     Slug = productCategory.Slug,
                     Keywords = productCategory.Keywords,
                     Products = MapProducts(productCategory.Products)
-                }).FirstOrDefault(x => x.Slug == slug);
+                }).AsNoTracking().FirstOrDefault(x => x.Slug == slug);
 
             foreach (var product in category.Products)
             {

@@ -15,7 +15,7 @@
                                     <div class = "single-category-item__image">
                                         <a asp-page = "/ProductCategory" asp-route-id = "@item.Slug">
                                             <img alt = "@item.PictureAlt" class = "img-fluid"
-                                                 src = "@item.Picture"
+                                                 src = "~/UploadFile/@item.Picture"
                                                  title = "@item.PictureTitle">
                                         </a>
                                     </div>

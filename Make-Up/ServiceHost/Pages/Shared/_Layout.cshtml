@@ -24,11 +24,9 @@
     <a class = "close-search-overlay" href = "javascript:void(0)" id = "close-search-overlay">
         <i class = "ion-ios-close-empty"></i>
     </a>
-
-
     <div class = "search-form">
-        <form action = "#">
-            <input placeholder = "هرچه می خواهید در فروشگاه جستجو کنید ..." type = "search">
+        <form method="get" asp-page="/Search">
+            <input type = "search" name="value" id="value" placeholder = "هرچه می خواهید در فروشگاه جستجو کنید ..." >
             <button type = "submit">
                 <i class = "ion-android-search"></i>
             </button>
