@@ -7,7 +7,6 @@
             <div class = "col-lg-12">
                 <div class = "category-wrapper">
                     <div class = "row row-10 ">
-
                         @foreach (var item in Model)
                         {
                             <div class = "col-lg-4 col-sm-6 grid-item">
@@ -21,7 +20,7 @@
                                     </div>
                                     <div class = "single-category-item__content">
                                         <h3 class = "title">@item.Name</h3>
-                                        <a asp-page = "/ProductCategory" asp-route-id = "@item.Slug">
+                                        <a asp-page = "/ProductCategory" asp-route-id ="@item.Slug">
                                             <i
                                                 class = "ion-android-arrow-dropleft-circle">
                                             </i> خرید
@@ -30,7 +29,6 @@
                                 </div>
                             </div>
                         }
-
                     </div>
                 </div>
             </div>
