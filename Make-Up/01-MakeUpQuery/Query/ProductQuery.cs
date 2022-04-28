@@ -6,6 +6,7 @@ using _01_MakeUpQuery.Contracts.Product;
 using DiscountManagement.Infrastructure.EFCore;
 using InventoryManagement.Infrastructure.EFCore;
 using Microsoft.EntityFrameworkCore;
+using ShopManagement.Domain.CommentAgg;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Infrastructure.EFCore;
 
@@ -36,6 +37,7 @@ namespace _01_MakeUpQuery.Query
 
             var product = _context.Products
                 .Include(product => product.Category)
+                .Include(product => product.Comments)
                 .Include(product => product.ProductPicture)
                 .Select(product =>
                     new ProductQueryModel
@@ -54,6 +56,7 @@ namespace _01_MakeUpQuery.Query
                         MetaDescription = product.MetaDescription,
                         ShortDescription = product.ShortDescription,
                         Pictures = MapProductPictures(product.ProductPicture),
+                        Comments = MapComments(product.Comments)
                     }).AsNoTracking().FirstOrDefault(x => x.Slug == slug);
 
 
@@ -83,6 +86,19 @@ namespace _01_MakeUpQuery.Query
             return product;
         }
 
+        private static List<CommentQueryModel> MapComments(List<Comment> comments)
+        {
+            return comments
+                .Where(x => x.IsConfirmed)
+                .Where(x=>!x.IsCanceled)
+                .Select(x => new CommentQueryModel
+            {
+                Id = x.Id,
+                Name = x.Name,
+                Message = x.Message
+            }).OrderByDescending(x=>x.Id).ToList();
+        }
+
         private static List<ProductPictureQueryModel> MapProductPictures(List<ProductPicture> pictures)
         {
             return pictures.Select(x => new ProductPictureQueryModel
@@ -91,7 +107,7 @@ namespace _01_MakeUpQuery.Query
                 Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
-                ProductId = x.ProductId 
+                ProductId = x.ProductId
             }).Where(x => !x.IsRemoved).ToList();
         }
 
