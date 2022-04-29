@@ -1,0 +1,108 @@
+﻿@page
+@model ServiceHost.Areas.Administration.Pages.Blog.Articles.CreateModel
+@{
+    Layout = "Shared/_AdminLayout";
+    ViewData["Title"] = "ایجاد مقاله جدید";
+}
+
+<div class = "row">
+    <div class = "col-md-12">
+        <div class = "panel panel-default">
+            <div class = "panel-heading">
+                <h3 class = "panel-title">جستجو در مقالات</h3>
+            </div>
+            <div class = "panel-body">
+                <form enctype = "multipart/form-data" method = "post">
+                    <div class = "row">
+                        <div class = "col-md-3">
+                            <div class = "form-group">
+                                <label asp-for = "Command.Title" class = "control-label">نام</label>
+                                <input asp-for = "Command.Title" class = "form-control" onchange = "makeSlug('Title', 'Slug')" type = "text">
+                                <span asp-validation-for = "Command.Title" class = "error"></span>
+                            </div>
+                        </div>
+                        <div class = "col-md-3">
+                            <div class = "form-group">
+                                <label asp-for = "Command.Slug" class = "control-label">اسلاگ</label>
+                                <input asp-for = "Command.Slug" class = "form-control" type = "text">
+                                <span asp-validation-for = "Command.Slug" class = "error"></span>
+                            </div>
+                        </div>
+                        <div class = "col-md-3">
+                            <div class = "form-group">
+                                <label asp-for = "Command.Picture" class = "control-label">عکس</label>
+                                <input accept = "image/*" asp-for = "Command.Picture" class = "form-control" type = "file"/>
+                                <span asp-validation-for = "Command.Picture" class = "error"></span>
+                            </div>
+                        </div>
+                        <div class = "col-md-3">
+                            <div class = "form-group">
+                                <label asp-for = "Command.CategoryId">گروه مقاله</label>
+                                <select asp-for = "Command.CategoryId" asp-items = "Model.ArticleCategories" class = "form-control">
+                                    <option value = "0">گروه مقاله ...</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-md-3">
+                            <div class = "form-group">
+                                <label asp-for = "Command.PictureAlt" class = "control-label">Alt</label>
+                                <input asp-for = "Command.PictureAlt" class = "form-control" type = "text">
+                                <span asp-validation-for = "Command.PictureAlt" class = "error"></span>
+                            </div>
+                        </div>
+                        <div class = "col-md-3">
+                            <div class = "form-group">
+                                <label asp-for = "Command.PictureTitle" class = "control-label">عنوان عکس</label>
+                                <input asp-for = "Command.PictureTitle" class = "form-control" type = "text">
+                                <span asp-validation-for = "Command.PictureTitle" class = "error"></span>
+                            </div>
+                        </div>
+                        <div class = "col-md-3">
+                            <div class = "form-group">
+                                <label asp-for = "Command.Keywords" class = "control-label">کلمات کلیدی</label>
+                                <input asp-for = "Command.Keywords" class = "form-control" type = "text">
+                                <span asp-validation-for = "Command.Keywords" class = "error"></span>
+                            </div>
+                        </div>
+                        <div class = "col-md-3">
+                            <div class = "form-group">
+                                <label asp-for = "Command.CanonicalAddress" class = "control-label">CanonicalAddress</label>
+                                <input asp-for = "Command.CanonicalAddress" class = "form-control" type = "text">
+                                <span asp-validation-for = "Command.CanonicalAddress" class = "error"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-md-6">
+                            <div class = "form-group no-margin">
+                                <label asp-for = "Command.ShortDescription" class = "control-label">توضیحات کوتاه</label>
+                                <textarea asp-for="Command.ShortDescription" class="form-control autogrow" rows="1"></textarea>
+                                <span asp-validation-for = "Command.ShortDescription" class = "error"></span>
+                            </div>
+                        </div>
+                        <div class = "col-md-6">
+                            <div class = "form-group no-margin">
+                                <label asp-for = "Command.MetaDescription" class = "control-label">توضیحات متا</label>
+                                <textarea asp-for="Command.MetaDescription" class="form-control autogrow" rows="1"></textarea>
+                                <span asp-validation-for = "Command.MetaDescription" class = "error"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-md-12">
+                            <div class = "form-group no-margin">
+                                <label asp-for = "Command.Description" class = "control-label">توضیحات</label>
+                                <textarea asp-for="Command.Description" class="form-control autogrow" onchange="fillField('Description', 'MetaDescription')" rows="20"></textarea>
+                                <span asp-validation-for = "Command.Description" class = "error"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class = "btn btn-success waves-effect waves-light m-b-5" type = "submit">ایجاد</button>
+                    <a asp-page = "./Index" class = "btn btn-warning waves-effect waves-light m-b-5">بازگشت</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jZFiSa/WgSceF8TYplN8YyX4ejjYoa3xtxa0nBjz8N4=",
+  "Hash": "IkBnbqazwF/huve+UsR+Cs8WQrj5eiH7WUWoyo6DqU0=",
   "Source": "ServiceHost",
   "BasePath": "_content/ServiceHost",
   "Mode": "Default",
@@ -7599,6 +7599,23 @@
       "OriginalItemSpec": "wwwroot\\UploadFile\\Khat-Rostika01.jpg"
     },
     {
+      "Identity": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\UploadFile\\اخبار-شرکت\\2022-04-29-15-44-04-images.jpg",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "UploadFile/اخبار-شرکت/2022-04-29-15-44-04-images.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadFile\\اخبار-شرکت\\2022-04-29-15-44-04-images.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\UploadFile\\اسلایدها\\2022-04-27-16-13-56-posters-beauty-fashion-girl-with-trendy-caviar-black-manicure-and-makeup.jpg",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
@@ -7767,6 +7784,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\UploadFile\\ریمل\\2022-04-26-23-20-57-315dcda0636094e360e4e70f642689336c615c72_1645690136.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\UploadFile\\مقالات\\شرکت-روستیکا\\2022-04-29-15-38-45-images.png",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "UploadFile/مقالات/شرکت-روستیکا/2022-04-29-15-38-45-images.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadFile\\مقالات\\شرکت-روستیکا\\2022-04-29-15-38-45-images.png"
     }
   ]
 }
