@@ -5,7 +5,7 @@
 
 @{
     Layout = "Shared/_AdminLayout";
-    ViewData["title"] = "مدیریت مقالات ";
+    ViewData["Title"] = "مدیریت مقالات ";
 }
 
 <div class = "row">
@@ -79,7 +79,7 @@
                                     <td>@item.ShortDescription</td>
                                     <td>@item.PublishDate</td>
                                     <td>
-                                        <a class = "btn btn-warning pull-right m-rl-5" asp-page="./Edit">
+                                        <a class = "btn btn-warning pull-right m-rl-5" asp-page="./Edit" asp-route-id="@item.Id">
                                             <i class = "fa fa-edit"></i> ویرایش
                                         </a>
                                     </td>

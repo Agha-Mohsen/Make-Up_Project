@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IkBnbqazwF/huve+UsR+Cs8WQrj5eiH7WUWoyo6DqU0=",
+  "Hash": "CNC7W1adT12tm7P+cKfWAqYIcL8Xy/2+BPB+V8oT9xg=",
   "Source": "ServiceHost",
   "BasePath": "_content/ServiceHost",
   "Mode": "Default",
@@ -6069,6 +6069,23 @@
       "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\backgrounds\\category-image-1820x400.jpg"
     },
     {
+      "Identity": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\Theme\\assets\\img\\backgrounds\\category-image-1820x4003.jpg",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "Theme/assets/img/backgrounds/category-image-1820x4003.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\backgrounds\\category-image-1820x4003.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\Theme\\assets\\img\\banners\\banner7.jpg",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
@@ -7701,6 +7718,23 @@
       "OriginalItemSpec": "wwwroot\\UploadFile\\اسلایدها\\2022-04-27-16-20-41-Combine-Makeup-Green-Contact-Lenses.jpg"
     },
     {
+      "Identity": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\UploadFile\\اسلایدها\\2022-04-29-20-16-22-91ba278987587b89e02e7de6b08a0f8b.jpg",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "UploadFile/اسلایدها/2022-04-29-20-16-22-91ba278987587b89e02e7de6b08a0f8b.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadFile\\اسلایدها\\2022-04-29-20-16-22-91ba278987587b89e02e7de6b08a0f8b.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\UploadFile\\خط-چشم\\2022-04-25-16-34-27-d1defeab8b5479ce9052528c6f71008c4e84ae61_1643188318.jpg",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
@@ -7801,6 +7835,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\UploadFile\\مقالات\\شرکت-روستیکا\\2022-04-29-15-38-45-images.png"
+    },
+    {
+      "Identity": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\UploadFile\\مقالات\\شرکت-روستیکا\\نحوه-ترکیب-رنگ-مو\\2022-04-30-12-21-56-91ba278987587b89e02e7de6b08a0f8b.jpg",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "UploadFile/مقالات/شرکت-روستیکا/نحوه-ترکیب-رنگ-مو/2022-04-30-12-21-56-91ba278987587b89e02e7de6b08a0f8b.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadFile\\مقالات\\شرکت-روستیکا\\نحوه-ترکیب-رنگ-مو\\2022-04-30-12-21-56-91ba278987587b89e02e7de6b08a0f8b.jpg"
     }
   ]
 }

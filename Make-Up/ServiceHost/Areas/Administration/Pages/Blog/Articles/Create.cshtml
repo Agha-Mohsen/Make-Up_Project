@@ -9,7 +9,7 @@
     <div class = "col-md-12">
         <div class = "panel panel-default">
             <div class = "panel-heading">
-                <h3 class = "panel-title">جستجو در مقالات</h3>
+                <h3 class = "panel-title">ایجاد مقاله جدید</h3>
             </div>
             <div class = "panel-body">
                 <form enctype = "multipart/form-data" method = "post">
@@ -74,19 +74,26 @@
                             </div>
                         </div>
                     </div>
-                    <div class = "row">
-                        <div class = "col-md-6">
-                            <div class = "form-group no-margin">
-                                <label asp-for = "Command.ShortDescription" class = "control-label">توضیحات کوتاه</label>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group no-margin">
+                                <label asp-for="Command.ShortDescription" class="control-label">توضیحات کوتاه</label>
                                 <textarea asp-for="Command.ShortDescription" class="form-control autogrow" rows="1"></textarea>
-                                <span asp-validation-for = "Command.ShortDescription" class = "error"></span>
+                                <span asp-validation-for="Command.ShortDescription" class="error"></span>
                             </div>
                         </div>
-                        <div class = "col-md-6">
-                            <div class = "form-group no-margin">
-                                <label asp-for = "Command.MetaDescription" class = "control-label">توضیحات متا</label>
+                        <div class="col-md-5">
+                            <div class="form-group no-margin">
+                                <label asp-for="Command.MetaDescription" class="control-label">توضیحات متا</label>
                                 <textarea asp-for="Command.MetaDescription" class="form-control autogrow" rows="1"></textarea>
-                                <span asp-validation-for = "Command.MetaDescription" class = "error"></span>
+                                <span asp-validation-for="Command.MetaDescription" class="error"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label asp-for="Command.PublishDate" class="control-label">تاریخ انتشار </label>
+                                <input asp-for="Command.PublishDate" class="form-control persianDateInput"></input>
+                                <span asp-validation-for="Command.PublishDate" class="error"></span>
                             </div>
                         </div>
                     </div>
@@ -94,7 +101,7 @@
                         <div class = "col-md-12">
                             <div class = "form-group no-margin">
                                 <label asp-for = "Command.Description" class = "control-label">توضیحات</label>
-                                <textarea asp-for="Command.Description" class="form-control autogrow" onchange="fillField('Description', 'MetaDescription')" rows="20"></textarea>
+                                <textarea asp-for="Command.Description" class="form-control" id="BodyContent" ></textarea>
                                 <span asp-validation-for = "Command.Description" class = "error"></span>
                             </div>
                         </div>
