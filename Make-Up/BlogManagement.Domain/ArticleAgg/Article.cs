@@ -39,9 +39,10 @@ namespace BlogManagement.Domain.ArticleAgg
             PublishDate = publishDate;
         }
 
-        public void Edit(string title, string shortDescription, string description, string picture, string pictureAlt,
-            string pictureTitle, DateTime publishDate, string slug, string metaDescription, string keywords, string canonicalAddress,
-            long categoryId)
+        public void Edit(string title, string shortDescription, 
+            string description, string picture, string pictureAlt, 
+            string pictureTitle, DateTime publishDate, string slug,
+            string metaDescription, string keywords, string canonicalAddress, long categoryId)
         {
             Title = title;
             ShortDescription = shortDescription;

@@ -1,4 +1,10 @@
-﻿<div class = "header-area header-sticky">
+﻿@model _01_MakeUpQuery.MenuModel
+
+
+
+
+
+<div class = "header-area header-sticky">
 <div class = "container">
 <div class = "row">
 <div class = "col-lg-12">
@@ -21,23 +27,23 @@
                 <li class = "menu-item-has-children">
                     <a>محصولات</a>
                     <ul class = "sub-menu">
-                        <li>
-                            <a href = "blog-left-sidebar.html">خط چشم</a>
-                        </li>
-                        <li>
-                            <a href = "blog-right-sidebar.html">رژ</a>
-                        </li>
+                       @foreach (var category in Model.ProductCategories)
+                       {
+                           <li>
+                               <a asp-page="./ProductCategory" asp-route-id="@category.Slug">@category.Name</a>
+                           </li>
+                       }
                     </ul>
                 </li>
                 <li class = "menu-item-has-children">
                     <a>مقالات</a>
                     <ul class = "sub-menu">
-                        <li>
-                            <a>گروه 1</a>
-                        </li>
-                        <li>
-                            <a>گروه 2</a>
-                        </li>
+                        @foreach (var article in Model.ArticleCategories)
+                        {
+                            <li>
+                                <a asp-page="./ArticleCategory" asp-route-id="@article.Slug">@article.Name</a>
+                            </li>
+                        }
                     </ul>
                 </li>
 

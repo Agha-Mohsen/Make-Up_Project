@@ -163,6 +163,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRpb25cUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Pages/Article.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Pages/ArticleCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZUNhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -193,6 +201,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Pages/Shared/Components/LatestArrivals/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcTGF0ZXN0QXJyaXZhbHNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Pages/Shared/Components/LatestArticles/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcTGF0ZXN0QXJ0aWNsZXNcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Mohsen-Shah/source/repos/Make-Up/Code/Make-Up/ServiceHost/Pages/Shared/Components/Menu/Default.cshtml]

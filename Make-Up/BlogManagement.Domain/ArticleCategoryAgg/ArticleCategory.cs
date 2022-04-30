@@ -33,8 +33,9 @@ namespace BlogManagement.Domain.ArticleCategoryAgg
             CanonicalAddress = canonicalAddress;
         }
 
-        public void Edit(string name, string picture, string pictureAlt, string pictureTitle, string description, int showOrder, string slug,
-            string keywords, string metaDescription, string canonicalAddress)
+        public void Edit(string name, string picture, string pictureAlt, string pictureTitle,
+            string description, int showOrder, string slug, string keywords, 
+            string metaDescription, string canonicalAddress)
         {
             Name = name;
 

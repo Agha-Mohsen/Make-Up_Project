@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CNC7W1adT12tm7P+cKfWAqYIcL8Xy/2+BPB+V8oT9xg=",
+  "Hash": "rP9qFo1t+6ysJugNHDgKh0wf0I5XMNzRdNFhzqPWCeY=",
   "Source": "ServiceHost",
   "BasePath": "_content/ServiceHost",
   "Mode": "Default",
@@ -7835,6 +7835,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\UploadFile\\مقالات\\شرکت-روستیکا\\2022-04-29-15-38-45-images.png"
+    },
+    {
+      "Identity": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\UploadFile\\مقالات\\شرکت-روستیکا\\اخبار-شرکت-روستیکا\\2022-04-30-14-05-33-91ba278987587b89e02e7de6b08a0f8b.jpg",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "UploadFile/مقالات/شرکت-روستیکا/اخبار-شرکت-روستیکا/2022-04-30-14-05-33-91ba278987587b89e02e7de6b08a0f8b.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadFile\\مقالات\\شرکت-روستیکا\\اخبار-شرکت-روستیکا\\2022-04-30-14-05-33-91ba278987587b89e02e7de6b08a0f8b.jpg"
     },
     {
       "Identity": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\UploadFile\\مقالات\\شرکت-روستیکا\\نحوه-ترکیب-رنگ-مو\\2022-04-30-12-21-56-91ba278987587b89e02e7de6b08a0f8b.jpg",
