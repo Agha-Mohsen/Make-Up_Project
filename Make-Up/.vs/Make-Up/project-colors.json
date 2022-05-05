@@ -130,7 +130,57 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "d2fb1564-a146-456a-9415-314f2dce54a8": {
+      "ProjectGuid": "d2fb1564-a146-456a-9415-314f2dce54a8",
+      "DisplayName": "CommentManagement.Domain",
+      "ColorIndex": 9
+    },
+    "d8b5f1a4-0f08-4e05-bd40-da574d6e462b": {
+      "ProjectGuid": "d8b5f1a4-0f08-4e05-bd40-da574d6e462b",
+      "DisplayName": "CommentManagement.Application.Contracts",
+      "ColorIndex": 10
+    },
+    "371950fb-d279-48f2-9706-99ca8fcca2b1": {
+      "ProjectGuid": "371950fb-d279-48f2-9706-99ca8fcca2b1",
+      "DisplayName": "CommentManagement.Application",
+      "ColorIndex": 11
+    },
+    "dacc78ec-73e5-4b4f-9c44-98b22236640e": {
+      "ProjectGuid": "dacc78ec-73e5-4b4f-9c44-98b22236640e",
+      "DisplayName": "CommentManagement.Infrastructure.EFCore",
+      "ColorIndex": 12
+    },
+    "27a45d94-41ae-4c83-86d3-02ee42a529fb": {
+      "ProjectGuid": "27a45d94-41ae-4c83-86d3-02ee42a529fb",
+      "DisplayName": "CommentManagement.Configuration",
+      "ColorIndex": 13
+    },
+    "299199ed-20c8-463f-adbf-6d3b6289dff2": {
+      "ProjectGuid": "299199ed-20c8-463f-adbf-6d3b6289dff2",
+      "DisplayName": "AccountManagement.Domain",
+      "ColorIndex": 14
+    },
+    "c0d054cd-f05c-47a6-a2f3-73289ee6c6a1": {
+      "ProjectGuid": "c0d054cd-f05c-47a6-a2f3-73289ee6c6a1",
+      "DisplayName": "AccountManagement.Application.Contracts",
+      "ColorIndex": 15
+    },
+    "f796db31-8f9a-46f7-81e4-7e6b0bc6798f": {
+      "ProjectGuid": "f796db31-8f9a-46f7-81e4-7e6b0bc6798f",
+      "DisplayName": "AccountManagement.Application",
+      "ColorIndex": 0
+    },
+    "59d7feaf-ccf9-4790-a15e-8016245e8aa9": {
+      "ProjectGuid": "59d7feaf-ccf9-4790-a15e-8016245e8aa9",
+      "DisplayName": "AccountManagement.Infrastructure.EFCore",
+      "ColorIndex": 1
+    },
+    "226d326c-241a-464a-8235-2e4ba1b2161c": {
+      "ProjectGuid": "226d326c-241a-464a-8235-2e4ba1b2161c",
+      "DisplayName": "AccountManagement.Infrastructure.Configuration",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 9
+  "NextColorIndex": 3
 }

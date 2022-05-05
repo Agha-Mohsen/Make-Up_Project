@@ -1,0 +1,30 @@
+﻿@model AccountManagement.Application.Contracts.Role.EditRole
+@{
+}
+<div class="modal-header">
+    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+    <h4 class="modal-title">ویرایش نقش : @Model.Name </h4>
+</div>
+
+<form asp-page="./Index" asp-page-handler="Edit"
+      data-action="Refresh"
+      data-ajax="true"
+      data-callback=""
+      method="post">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label">نام</label>
+                    <input asp-for="Name" class="form-control" type="text">
+                    <span asp-validation-for="Name" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" asp-for="Id" value="@Model.Id"/>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-default waves-effect" data-dismiss="modal" type="button">بستن</button>
+        <button class="btn btn-info waves-effect waves-light" type="submit">ویرایش</button>
+    </div>
+</form>

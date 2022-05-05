@@ -1,7 +1,9 @@
 ﻿@page "{id}"
 @model ServiceHost.Pages.ProductModel
 @{
-    ViewData["Title"] = "صفحه محصول";
+    ViewData["Title"] = Model.Product.Name;
+    ViewData["keywords"] = Model.Product.Keywords;
+    ViewData["metaDescription"] = Model.Product.MetaDescription;
 }
 
 <div class = "breadcrumb-area section-space--half">
@@ -112,7 +114,7 @@
                 <p class = "single-info">
                     <a asp-page = "/ProductCategory" asp-route-id = "@Model.Product.CategorySlug">@Model.Product.Category</a>
                 </p>
-                <h4 class = "product-title">@Model.Product.Name</h4>
+                <h2 class = "product-title">@Model.Product.Name</h2>
                 <div class = "product-rating">
                     <span class = "rating">
                         <i class = "ion-android-star active"></i>
@@ -180,7 +182,7 @@
                 </div>
 
                 <div class = "social-share-buttons mt-20">
-                    <h5>این محصول را به اشتراک بگذارید</h5>
+                    <h3>این محصول را به اشتراک بگذارید</h3>
                     <ul>
                         <li>
                             <a class = "twitter" href = "#">
@@ -320,13 +322,13 @@
                                         </div>
                                         <div class = "col-md-6 col-12 form-group">
                                             <label for = "email">ایمیل :</label>
-                                            <input id = "email" placeholder = "Mohsen@Gmail.com" name="email" type = "text">
+                                            <input id = "email" placeholder = "مثال : Mohsen@Gmail.com" name="email" type = "text">
                                         </div>
                                         <div class = "col-12 form-group">
-                                            <label for = "your-review">نظر شما :</label>
+                                            <label>نظر شما :</label>
                                             <textarea id="message" name="message" placeholder="نظر خود را بنویسید ..."></textarea>
                                         </div>
-                                        <input type="hidden" name="productId" value="@Model.Product.Id"/>
+                                        <input type="hidden" name="OwnerRecordId" value="@Model.Product.Id"/>
                                         <input type="hidden" name="productSlug" value="@Model.Product.Slug"/>
                                         <div class = "col-12">
                                             <input type = "submit" value = "ارسال">

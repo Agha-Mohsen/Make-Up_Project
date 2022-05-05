@@ -1,8 +1,7 @@
 ﻿@model _01_MakeUpQuery.MenuModel
-
-
-
-
+@inject  _0_Framework.Application.IAuthHelper _authHelper
+@{
+}
 
 <div class = "header-area header-sticky">
 <div class = "container">
@@ -50,6 +49,18 @@
                 <li>
                     <a href = "contact.html">تماس با ما</a>
                 </li>
+                @if (_authHelper.IsAuthenticated())
+                {
+                    <li>
+                        <a asp-page="/Account" asp-page-handler="Logout">خروج</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a asp-page="/Account">ورود</a>
+                    </li>  
+                }
             </ul>
         </nav>
     </div>

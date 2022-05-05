@@ -1,0 +1,66 @@
+﻿@model AccountManagement.Application.Contracts.Account.EditAccount
+@{
+}
+<div class = "modal-header">
+    <button aria-hidden = "true" class = "close" data-dismiss = "modal" type = "button">×</button>
+    <h4 class = "modal-title">ویرایش کاربر : @Model.Fullname </h4>
+</div>
+
+<form asp-page = "./Index" asp-page-handler = "Edit"
+      data-action = "Refresh"
+      data-ajax = "true"
+      data-callback = ""
+      enctype="multipart/form-data"
+      method = "post">
+    <div class = "modal-body">
+        <div class = "row">
+            <div class = "col-md-6">
+                <div class = "form-group">
+                    <label asp-for = "Fullname" class = "control-label">نام</label>
+                    <input asp-for = "Fullname" class = "form-control" type = "text">
+                    <span asp-validation-for = "Fullname" class = "error"></span>
+                </div>
+            </div>
+            <div class = "col-md-6">
+                <div class = "form-group">
+                    <label asp-for = "Username" class = "control-label">نام کاربری</label>
+                    <input asp-for = "Username" class = "form-control" type = "text">
+                    <span asp-validation-for = "Username" class = "error"></span>
+                </div>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-6">
+                <div class = "form-group">
+                    <label asp-for = "Mobile" class = "control-label">موبایل</label>
+                    <input asp-for = "Mobile" class = "form-control" type = "text">
+                    <span asp-validation-for = "Mobile" class = "error"></span>
+                </div>
+            </div>
+            <div class = "col-md-6">
+                <div class = "form-group">
+                    <label class = "control-label" asp-for = "RoleId">نقش</label>
+                     <select class = "form-control" type = "text" asp-for = "RoleId"
+                            asp-items = 'new SelectList(Model.Roles, "Id", "Name")'>
+                        <option value = "0">نقش</option>
+                    </select>
+                    <span asp-validation-for = "RoleId" class = "error"></span>
+                </div>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-12">
+                <div class = "form-group">
+                    <label asp-for = "ProfilePhoto" class = "control-label">عکس پرفایل</label>
+                    <input asp-for = "ProfilePhoto" class = "form-control" type = "file" accept="image/*" />
+                    <span asp-validation-for = "ProfilePhoto" class = "error"></span>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" asp-for="Id" value="@Model.Id"/>
+    </div>
+    <div class = "modal-footer">
+        <button class = "btn btn-default waves-effect" data-dismiss = "modal" type = "button">بستن</button>
+        <button class = "btn btn-info waves-effect waves-light" type = "submit">ویرایش</button>
+    </div>
+</form>

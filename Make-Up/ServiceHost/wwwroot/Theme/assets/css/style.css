@@ -511,7 +511,7 @@ select {
 }
 
 	.navigation-menu-wrapper nav > ul > li.menu-item-has-children > a::after {
-		font-family: IranSans;
+		font-family: Ionicons;
 		font-size: 11px;
 		font-weight: 300;
 		float: right;

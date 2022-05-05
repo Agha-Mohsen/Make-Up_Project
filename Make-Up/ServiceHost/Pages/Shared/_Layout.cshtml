@@ -4,7 +4,20 @@
 <head>
     <meta charset = "utf-8"/>
     <meta content = "width=device-width, initial-scale=1.0" name = "viewport"/>
-    <title>MakeUp Store</title>
+    
+    @if (ViewData["Title"] != null)
+    {
+        <title>@ViewData["Title"] - شرکت لوازم آرایشی (طلوع پاسارگاد)</title>
+    }
+    else
+    {
+        <title>شرکت لوازم آرایشی (طلوع پاسارگاد)</title>
+    }
+    
+    
+    <meta name="keywords" content="@ViewData["keywords"]" />
+    <meta name="description" content="@ViewData["metaDescription"]" />
+
 
     <link href = "~/Theme/assets/css/vendors.css" rel = "stylesheet">
     <link href = "~/Theme/assets/css/style.css" rel = "stylesheet">
