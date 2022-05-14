@@ -28,9 +28,23 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
 
         public EditRole GetDetails(long id)
         {
-            return _context.Roles.Select(x => new EditRole{Id = x.Id , Name = x.Name})
+            var role = _context.Roles.Select(x => new EditRole
+                {
+                    Id = x.Id ,
+                    Name = x.Name,
+                    MappedPermission = MapPermissions(x.Permissions),
+                })
                 .AsNoTracking()
                 .FirstOrDefault(x => x.Id == id);
+
+            role.Permissions = role.MappedPermission.Select(x => x.Code).ToList();
+
+            return role;
+        }
+                
+        private static List<PermissionDto> MapPermissions(IEnumerable<Permission> permissions)
+        {
+            return permissions.Select(x => new PermissionDto(x.Code , x.Name)).ToList();
         }
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "d3CMz0E9g5qT+EDpvgYBSB6qRLgZVAbrbnZAasyWDSI=",
+  "Hash": "Zb87Cp3qo7Xg4aBNHSYFPaQhFsVXJrGTRWP4PdhDdwU=",
   "Source": "ServiceHost",
   "BasePath": "_content/ServiceHost",
   "Mode": "Default",
@@ -7631,6 +7631,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Theme\\assets\\js\\ajax-mail.js"
+    },
+    {
+      "Identity": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\Theme\\assets\\js\\custom.js",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "Theme/assets/js/custom.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\assets\\js\\custom.js"
+    },
+    {
+      "Identity": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\Theme\\assets\\js\\plugins.js",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "Theme/assets/js/plugins.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\assets\\js\\plugins.js"
     },
     {
       "Identity": "C:\\Users\\Mohsen-Shah\\source\\repos\\Make-Up\\Code\\Make-Up\\ServiceHost\\wwwroot\\Theme\\assets\\js\\vendors.js",

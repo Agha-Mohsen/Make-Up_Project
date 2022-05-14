@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using _0_Framework.Application;
 using AccountManagement.Application.Contracts.Account;
 using AccountManagement.Domain.AccountAgg;
+using AccountManagement.Domain.RoleAgg;
 
 namespace AccountManagement.Application
 {
@@ -11,14 +13,16 @@ namespace AccountManagement.Application
         private readonly IFileUploader _fileUploader;
         private readonly IPasswordHasher _passwordHasher;
         private readonly IAuthHelper _authHelper;
+        private readonly IRoleRepository _roleRepository;
 
         public AccountApplication(IAccountRepository accountRepository, IFileUploader fileUploader,
-            IPasswordHasher passwordHasher, IAuthHelper authHelper)
+            IPasswordHasher passwordHasher, IAuthHelper authHelper, IRoleRepository roleRepository)
         {
             _accountRepository = accountRepository;
             _fileUploader = fileUploader;
             _passwordHasher = passwordHasher;
             _authHelper = authHelper;
+            _roleRepository = roleRepository;
         }
 
         public OperationResult Register(RegisterAccount command)
@@ -96,7 +100,10 @@ namespace AccountManagement.Application
             if (!result.Verified)
                 operation.Failed(ApplicationMessages.WrongUserPass);
 
-            var authHelper = new AuthViewModel(account.Id, account.RoleId, account.Fullname, account.Username);
+            var permission = _roleRepository.Get(account.RoleId).Permissions.Select(x => x.Code).ToList();
+
+            var authHelper =
+                new AuthViewModel(account.Id, account.RoleId, account.Fullname, account.Username, permission);
             _authHelper.Signin(authHelper);
 
             return operation.Succeeded();

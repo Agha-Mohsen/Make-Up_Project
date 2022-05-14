@@ -170,11 +170,11 @@
                 <div class = "product-actions">
                     <div class = "quantity-selection">
                         <label>تعداد</label>
-                        <input min = "1" type = "number" value = "1">
+                        <input min = "1" type = "number" value = "1" id="productCount">
                     </div>
 
                     <div class = "product-buttons">
-                        <a class = "cart-btn" href = "#">
+                        <a class = "cart-btn" onclick="addToCart('@Model.Product.Id' , '@Model.Product.Name' , '@Model.Product.DoublePrice' , '@Model.Product.Picture')">
                             <i class = "ion-bag"></i> افزودن به سبد خرید
                         </a>
                     </div>
@@ -250,62 +250,12 @@
                     <div aria-labelledby = "review-tab" class = "tab-pane fade" id = "review"
                          role = "tabpanel">
                         <div class = "product-rating-wrap">
-                            @* <div class = "rating-list">
-                                <div class = "sin-list float-right">
-                                    <i class = "fa fa-star"></i>
-                                    <i class = "fa fa-star"></i>
-                                    <i class = "fa fa-star"></i>
-                                    <i class = "fa fa-star"></i>
-                                    <i class = "fa fa-star"></i>
-                                    <span>(5)</span>
-                                </div>
-                                <div class = "sin-list float-right">
-                                    <i class = "fa fa-star"></i>
-                                    <i class = "fa fa-star"></i>
-                                    <i class = "fa fa-star"></i>
-                                    <i class = "fa fa-star"></i>
-                                    <i class = "fa fa-star-o"></i>
-                                    <span>(3)</span>
-                                </div>
-                                <div class = "sin-list float-right">
-                                    <i class = "fa fa-star"></i>
-                                    <i class = "fa fa-star"></i>
-                                    <i class = "fa fa-star"></i>
-                                    <i class = "fa fa-star-o"></i>
-                                    <i class = "fa fa-star-o"></i>
-                                    <span>(1)</span>
-                                </div>
-                                <div class = "sin-list float-right">
-                                    <i class = "fa fa-star"></i>
-                                    <i class = "fa fa-star"></i>
-                                    <i class = "fa fa-star-o"></i>
-                                    <i class = "fa fa-star-o"></i>
-                                    <i class = "fa fa-star-o"></i>
-                                    <span>(0)</span>
-                                </div>
-                                <div class = "sin-list float-right">
-                                    <i class = "fa fa-star"></i>
-                                    <i class = "fa fa-star-o"></i>
-                                    <i class = "fa fa-star-o"></i>
-                                    <i class = "fa fa-star-o"></i>
-                                    <i class = "fa fa-star-o"></i>
-                                    <span>(0)</span>
-                                </div>
-                            </div>*@
                             @foreach (var comment in @Model.Product.Comments)
                             {
                                 <div class = "ratings-wrapper">
                                     <div class = "sin-ratings">
                                         <div class = "rating-author">
                                             <h3>@comment.Name</h3>
-                                            @*<div class = "rating-star">
-                                                <i class = "fa fa-star"></i>
-                                                <i class = "fa fa-star"></i>
-                                                <i class = "fa fa-star"></i>
-                                                <i class = "fa fa-star"></i>
-                                                <i class = "fa fa-star"></i>
-                                                <span>(5)</span>
-                                            </div>*@
                                         </div>
                                         <p>@comment.Message</p>
                                     </div>

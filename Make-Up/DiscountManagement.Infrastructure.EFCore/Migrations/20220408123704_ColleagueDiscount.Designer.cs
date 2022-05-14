@@ -21,7 +21,7 @@ namespace DiscountManagement.Infrastructure.EFCore.Migrations
                 .HasAnnotation("ProductVersion", "5.0.15")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("DiscountManagement.Domain.ColleagueDiscountAgg.ColleagueDiscount", b =>
+            modelBuilder.Entity("DiscountManagement.Domain.ColleagueDiscountAgg.ColleagueDiscounts", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()

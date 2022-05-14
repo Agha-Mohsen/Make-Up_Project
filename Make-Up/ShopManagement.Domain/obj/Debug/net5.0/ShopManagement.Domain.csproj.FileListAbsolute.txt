@@ -6,6 +6,7 @@ C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Domain\bin
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Domain\bin\Debug\net5.0\0_Framework.pdb
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.csproj.AssemblyReference.cache
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.AssemblyInfoInputs.cache
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.AssemblyInfo.cs
@@ -14,4 +15,3 @@ C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Domain\obj
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Domain\obj\Debug\net5.0\ref\ShopManagement.Domain.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.pdb
-C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.csproj.AssemblyReference.cache

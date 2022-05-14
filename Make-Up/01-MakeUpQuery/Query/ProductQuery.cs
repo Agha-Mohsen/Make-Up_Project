@@ -8,6 +8,7 @@ using CommentManagement.Infrastructure.EFCore;
 using DiscountManagement.Infrastructure.EFCore;
 using InventoryManagement.Infrastructure.EFCore;
 using Microsoft.EntityFrameworkCore;
+using ShopManagement.Application.Contracts.Order;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Infrastructure.EFCore;
 
@@ -20,7 +21,8 @@ namespace _01_MakeUpQuery.Query
         private readonly DiscountContext _discountContext;
         private readonly CommentContext _commentContext;
 
-        public ProductQuery(ShopContext context, InventoryContext inventoryContext, DiscountContext discountContext, CommentContext commentContext)
+        public ProductQuery(ShopContext context, InventoryContext inventoryContext, DiscountContext discountContext,
+            CommentContext commentContext)
         {
             _context = context;
             _inventoryContext = inventoryContext;
@@ -30,34 +32,35 @@ namespace _01_MakeUpQuery.Query
 
         public ProductQueryModel GetProductDetails(string slug)
         {
-            var inventory = _inventoryContext.Inventory.Select(x => new {x.ProductId, x.UnitPrice, x.InStock}).ToList();
+            var inventory = _inventoryContext.Inventory.Select(x => new { x.ProductId, x.UnitPrice, x.InStock })
+                .ToList();
 
             var discounts = _discountContext.CustomerDiscounts
                 .Where(customerDiscount =>
                     customerDiscount.StartDate < DateTime.Now && customerDiscount.EndDate > DateTime.Now)
                 .Select(customerDiscount => new
-                    {customerDiscount.ProductId, customerDiscount.DiscountRate, customerDiscount.EndDate}).ToList();
+                    { customerDiscount.ProductId, customerDiscount.DiscountRate, customerDiscount.EndDate }).ToList();
 
             var product = _context.Products
                 .Include(product => product.Category)
                 .Include(product => product.ProductPicture)
-                .Select(product =>
+                .Select(x =>
                     new ProductQueryModel
                     {
-                        Id = product.Id,
-                        Category = product.Category.Name,
-                        Name = product.Name,
-                        Picture = product.Picture,
-                        PictureAlt = product.PictureAlt,
-                        PictureTitle = product.PictureTitle,
-                        Slug = product.Slug,
-                        CategorySlug = product.Category.Slug,
-                        Description = product.Description,
-                        Code = product.Code,
-                        Keywords = product.Keywords,
-                        MetaDescription = product.MetaDescription,
-                        ShortDescription = product.ShortDescription,
-                        Pictures = MapProductPictures(product.ProductPicture),
+                        Id = x.Id,
+                        Category = x.Category.Name,
+                        Name = x.Name,
+                        Picture = x.Picture,
+                        PictureAlt = x.PictureAlt,
+                        PictureTitle = x.PictureTitle,
+                        Slug = x.Slug,
+                        CategorySlug = x.Category.Slug,
+                        Description = x.Description,
+                        Code = x.Code,
+                        Keywords = x.Keywords,
+                        MetaDescription = x.MetaDescription,
+                        ShortDescription = x.ShortDescription,
+                        Pictures = MapProductPictures(x.ProductPicture),
                     }).AsNoTracking().FirstOrDefault(x => x.Slug == slug);
 
 
@@ -72,10 +75,11 @@ namespace _01_MakeUpQuery.Query
                 product.IsInStock = productInventory.InStock;
                 var price = productInventory.UnitPrice;
                 product.Price = price.ToMoney();
+                product.DoublePrice = price;
                 var discount = discounts.FirstOrDefault(x => x.ProductId == product.Id);
                 if (discount != null)
                 {
-                    int discountRate = discount.DiscountRate;
+                    var discountRate = discount.DiscountRate;
                     product.DiscountRate = discountRate;
                     product.HasDiscount = discountRate > 0;
                     product.DiscountExpireDate = discount.EndDate.ToDiscountFormat();
@@ -90,7 +94,7 @@ namespace _01_MakeUpQuery.Query
                 .Where(x => !x.IsCanceled)
                 .Where(x => x.Type == CommentType.Product)
                 .Where(x => x.OwnerRecordId == product.Id)
-                .Select(x=> new CommentQueryModel
+                .Select(x => new CommentQueryModel
                 {
                     Id = x.Id,
                     Name = x.Name,
@@ -118,12 +122,12 @@ namespace _01_MakeUpQuery.Query
 
         public List<ProductQueryModel> GetLatestArrivals()
         {
-            var inventory = _inventoryContext.Inventory.Select(x => new {x.ProductId, x.UnitPrice}).ToList();
+            var inventory = _inventoryContext.Inventory.Select(x => new { x.ProductId, x.UnitPrice }).ToList();
 
             var discounts = _discountContext.CustomerDiscounts
                 .Where(customerDiscount =>
                     customerDiscount.StartDate < DateTime.Now && customerDiscount.EndDate > DateTime.Now)
-                .Select(customerDiscount => new {customerDiscount.ProductId, customerDiscount.DiscountRate}).ToList();
+                .Select(customerDiscount => new { customerDiscount.ProductId, customerDiscount.DiscountRate }).ToList();
 
             var products = _context.Products.Include(product => product.Category).Select(product =>
                 new ProductQueryModel
@@ -162,13 +166,13 @@ namespace _01_MakeUpQuery.Query
         public List<ProductQueryModel> Search(string value)
         {
             var inventory = _inventoryContext.Inventory
-                .Select(inventory => new {inventory.ProductId, inventory.UnitPrice}).ToList();
+                .Select(inventory => new { inventory.ProductId, inventory.UnitPrice }).ToList();
 
             var discounts = _discountContext.CustomerDiscounts
                 .Where(customerDiscount =>
                     customerDiscount.StartDate < DateTime.Now && customerDiscount.EndDate > DateTime.Now)
                 .Select(customerDiscount => new
-                    {customerDiscount.ProductId, customerDiscount.DiscountRate, customerDiscount.EndDate}).ToList();
+                    { customerDiscount.ProductId, customerDiscount.DiscountRate, customerDiscount.EndDate }).ToList();
 
             var query = _context.Products
                 .Include(x => x.Category)
@@ -211,6 +215,19 @@ namespace _01_MakeUpQuery.Query
             }
 
             return products;
+        }
+
+        public List<CartItem> CheckInventoryStatus(List<CartItem> cartItems)
+        {
+            var inventory = _inventoryContext.Inventory.ToList();
+            foreach (var cartItem in cartItems.Where(cartItem =>
+                         inventory.Any(x => x.ProductId == cartItem.Id && x.InStock)))
+            {
+                var itemInventory = inventory.Find(x => x.ProductId == cartItem.Id);
+                cartItem.IsInStock = itemInventory.CalculateCurrentCount() >= cartItem.Count;
+            }
+
+            return cartItems;
         }
     }
 }

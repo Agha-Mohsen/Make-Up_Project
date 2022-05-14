@@ -44,7 +44,7 @@ namespace ServiceHost
             AccountManagementBootstrapper.Configure(services, connectionString);
 
             services.AddTransient<IFileUploader, FileUploader>();
-            services.AddTransient<IPasswordHasher, PasswordHasher>();
+            services.AddSingleton<IPasswordHasher, PasswordHasher>();
             services.AddTransient<IAuthHelper, AuthHelper>();
 
             services.Configure<CookiePolicyOptions>(options =>
@@ -74,10 +74,10 @@ namespace ServiceHost
 
                 options.AddPolicy("Account",
                     builder => builder.RequireRole(new List<string> { Roles.Administrator }));
-
             });
 
             services.AddRazorPages()
+                .AddMvcOptions(options => options.Filters.Add<SecurityPageFilter>())
                 .AddRazorPagesOptions(options =>
                 {
                     options.Conventions.AuthorizeAreaFolder("Administration", "/", "AdminArea");
