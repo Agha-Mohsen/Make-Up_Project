@@ -87,6 +87,11 @@ namespace AccountManagement.Application
             return operation.Succeeded();
         }
 
+        public List<AccountViewModel> GetAccounts()
+        {
+            return _accountRepository.GetAccounts();
+        }
+
         public OperationResult Login(Login command)
         {
             var operation = new OperationResult();

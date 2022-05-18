@@ -10,12 +10,15 @@
 		<ProjectReference Include="..\CommentManagement.Configuration\CommentManagement.Configuration.csproj" />
 		<ProjectReference Include="..\DiscountManagement.Configuration\DiscountManagement.Configuration.csproj" />
 		<ProjectReference Include="..\InventoryManagement.Infrastructure.Configuration\InventoryManagement.Infrastructure.Configuration.csproj" />
+		<ProjectReference Include="..\InventoryManagement.Presentation.Api\InventoryManagement.Presentation.Api.csproj" />
 		<ProjectReference Include="..\ShopManagement.Configuration\ShopManagement.Configuration.csproj" />
 		<ProjectReference Include="..\ShopManagement.Infrastructure.EFCore\ShopManagement.Infrastructure.EFCore.csproj" />
+		<ProjectReference Include="..\ShopManagement.Presentation.Api\ShopManagement.Presentation.Api.csproj" />
 	</ItemGroup>
 
 
 	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.5" />
 		<PackageReference Include="Microsoft.CodeAnalysis.Features" Version="4.0.0" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.14">
 			<PrivateAssets>all</PrivateAssets>

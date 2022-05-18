@@ -2,6 +2,6 @@
 {
     public class EditColleagueDiscount : DefineColleagueDiscount
     {
-        public long Id { get; set; }    
+        public long Id { get; set; }
     }
 }

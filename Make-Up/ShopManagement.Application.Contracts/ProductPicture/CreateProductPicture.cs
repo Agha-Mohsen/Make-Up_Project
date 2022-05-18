@@ -14,7 +14,6 @@ namespace ShopManagement.Application.Contracts.ProductPicture
 
         [FileExtensionLimitation(new string[] { ".jpeg", ".jpg", ".png" }, ErrorMessage = ValidationMessages.InvalidFileFormat)]
         [MaxFileSize(3 * 1024 * 1024 , ErrorMessage = ValidationMessages.MaxFileSize)]
-        [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public IFormFile Picture { get; set; }
 
         [Required(ErrorMessage = ValidationMessages.IsRequired)]

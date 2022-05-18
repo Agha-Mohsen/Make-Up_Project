@@ -58,6 +58,11 @@
                         <span>کامنت ها</span>
                     </a>
                 </li>
+                <li>
+                    <a asp-page="/Shop/Orders/Index" class="waves-effect">
+                        <i class="md md-comment"></i>سفارشات
+                    </a>
+                </li>
                 @if (_authHelper.CurrentAccountRole() == Roles.Administrator)
                 {
                     <li>

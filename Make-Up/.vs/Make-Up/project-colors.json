@@ -180,7 +180,37 @@
       "ProjectGuid": "226d326c-241a-464a-8235-2e4ba1b2161c",
       "DisplayName": "AccountManagement.Infrastructure.Configuration",
       "ColorIndex": 2
+    },
+    "4f6f23b2-7e81-4bf1-87c1-3defe7e566bf": {
+      "ProjectGuid": "4f6f23b2-7e81-4bf1-87c1-3defe7e566bf",
+      "DisplayName": "ShopManagement",
+      "ColorIndex": 3
+    },
+    "7c56310e-4c1f-4da4-a340-58a904e8ca90": {
+      "ProjectGuid": "7c56310e-4c1f-4da4-a340-58a904e8ca90",
+      "DisplayName": "ShopManagement.Infrastructure.InventoryAcl",
+      "ColorIndex": 4
+    },
+    "b7f08c86-c81c-4914-b902-c999003db13e": {
+      "ProjectGuid": "b7f08c86-c81c-4914-b902-c999003db13e",
+      "DisplayName": "ShopManagement.Presentation.Api",
+      "ColorIndex": 5
+    },
+    "31afe5b0-a1ea-41e9-84c2-301bde8f7f89": {
+      "ProjectGuid": "31afe5b0-a1ea-41e9-84c2-301bde8f7f89",
+      "DisplayName": "ShopManagement.Presentation.Api",
+      "ColorIndex": 6
+    },
+    "57f932f2-ccdd-4c6f-8718-07bd6e9c6fe1": {
+      "ProjectGuid": "57f932f2-ccdd-4c6f-8718-07bd6e9c6fe1",
+      "DisplayName": "InventoryManagement.Presentation.Api",
+      "ColorIndex": 7
+    },
+    "f877c97c-79a7-4977-8020-87450b04e226": {
+      "ProjectGuid": "f877c97c-79a7-4977-8020-87450b04e226",
+      "DisplayName": "BlogManagement.Presentation.Api",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 9
 }

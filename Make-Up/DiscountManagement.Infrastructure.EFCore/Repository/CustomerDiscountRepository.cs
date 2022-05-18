@@ -34,7 +34,7 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
 
         public List<CustomerDiscountViewModel> Search(CustomerDiscountSearchModel searchModel)
         {
-            var products = _shopContext.Products.Select(x => new {x.Id, x.Name}).ToList();
+            var products = _shopContext.Products.Select(x => new { x.Id, x.Name }).ToList();
             var query = _context.CustomerDiscounts.Select(x => new CustomerDiscountViewModel
             {
                 Id = x.Id,
@@ -52,14 +52,10 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
                 query = query.Where(x => x.ProductId == searchModel.ProductId);
 
             if (!string.IsNullOrWhiteSpace(searchModel.StartDate))
-            {
                 query = query.Where(x => x.StartDateGr > searchModel.StartDate.ToGeorgianDateTime());
-            }
 
             if (!string.IsNullOrWhiteSpace(searchModel.EndDate))
-            {
                 query = query.Where(x => x.EndDateGr < searchModel.EndDate.ToGeorgianDateTime());
-            }
 
             var discounts = query.OrderByDescending(x => x.Id).ToList();
 

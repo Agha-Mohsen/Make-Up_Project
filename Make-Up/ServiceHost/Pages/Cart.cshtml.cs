@@ -24,52 +24,45 @@ namespace ServiceHost.Pages
 
         public void OnGet()
         {
-            var serialize = new JavaScriptSerializer();
+            var serializer = new JavaScriptSerializer();
             var value = Request.Cookies[CookieName];
-            var cartItems = serialize.Deserialize<List<CartItem>>(value);
-            if (cartItems != null)
-                foreach (var item in cartItems)
-                    item.CalculateTotalItemPrice();
-            else
-            {
-                cartItems = new List<CartItem>();
-            }
+            var cartItems = serializer.Deserialize<List<CartItem>>(value);
+            foreach (var item in cartItems)
+                item.CalculateTotalItemPrice();
 
             CartItems = _productQuery.CheckInventoryStatus(cartItems);
         }
 
         public IActionResult OnGetRemoveFromCart(long id)
         {
-            var serialize = new JavaScriptSerializer();
+            var serializer = new JavaScriptSerializer();
             var value = Request.Cookies[CookieName];
             Response.Cookies.Delete(CookieName);
-            var cartItems = serialize.Deserialize<List<CartItem>>(value);
+            var cartItems = serializer.Deserialize<List<CartItem>>(value);
             var itemToRemove = cartItems.FirstOrDefault(x => x.Id == id);
             cartItems.Remove(itemToRemove);
             var options = new CookieOptions { Expires = DateTime.Now.AddDays(2) };
-            Response.Cookies.Append(CookieName, serialize.Serialize(cartItems), options);
+            Response.Cookies.Append(CookieName, serializer.Serialize(cartItems), options);
             return RedirectToPage("/Cart");
         }
 
         public IActionResult OnGetGoToCheckOut()
         {
-            var serialize = new JavaScriptSerializer();
+            var serializer = new JavaScriptSerializer();
             var value = Request.Cookies[CookieName];
-            var cartItems = serialize.Deserialize<List<CartItem>>(value);
-            if (cartItems != null)
-                foreach (var item in cartItems)
-                    item.CalculateTotalItemPrice();
-            else
+            var cartItems = serializer.Deserialize<List<CartItem>>(value);
+            foreach (var item in cartItems)
             {
-                cartItems = new List<CartItem>();
+                item.TotalItemPrice = item.UnitPrice * item.Count;
             }
 
             CartItems = _productQuery.CheckInventoryStatus(cartItems);
 
-            if (cartItems.Any(x => !x.IsInStock))
-                return RedirectToPage("/Cart");
+            //if (CartItems.Any(x => !x.IsInStock))
+            //    return RedirectToPage("/Cart");
+            //return RedirectToPage("/Checkout");
 
-            return RedirectToPage("/Checkout");
+            return RedirectToPage(CartItems.Any(x => !x.IsInStock) ? "/Cart" : "/Checkout");
         }
     }
 }

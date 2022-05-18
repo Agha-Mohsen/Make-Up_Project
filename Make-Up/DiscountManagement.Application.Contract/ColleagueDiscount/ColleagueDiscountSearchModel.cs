@@ -2,6 +2,6 @@
 {
     public class ColleagueDiscountSearchModel
     {
-        public long ProductId { get; set; }     
+        public long ProductId { get; set; }
     }
 }

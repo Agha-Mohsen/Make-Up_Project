@@ -27,3 +27,9 @@ C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\DiscountManagement.Config
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\DiscountManagement.Configuration\obj\Debug\net5.0\DiscountManagement.Configuration.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\DiscountManagement.Configuration\obj\Debug\net5.0\ref\DiscountManagement.Configuration.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\DiscountManagement.Configuration\obj\Debug\net5.0\DiscountManagement.Configuration.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\DiscountManagement.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\DiscountManagement.Configuration\bin\Debug\net5.0\AccountManagement.Domain.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\DiscountManagement.Configuration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\DiscountManagement.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\DiscountManagement.Configuration\bin\Debug\net5.0\AccountManagement.Domain.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\DiscountManagement.Configuration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb

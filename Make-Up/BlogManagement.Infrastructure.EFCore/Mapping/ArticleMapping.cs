@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BlogManagement.Domain.ArticleAgg;
+﻿using BlogManagement.Domain.ArticleAgg;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -14,8 +9,6 @@ namespace BlogManagement.Infrastructure.EFCore.Mapping
         public void Configure(EntityTypeBuilder<Article> builder)
         {
             builder.ToTable("Articles");
-
-            builder.HasKey(x => x.Id);
 
             builder.HasKey(x => x.Id);
 

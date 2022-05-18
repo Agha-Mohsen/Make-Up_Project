@@ -46,8 +46,8 @@ namespace CommentManagement.Infrastructure.EFCore.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasMaxLength(490)
+                        .HasColumnType("nvarchar(490)");
 
                     b.Property<long>("OwnerRecordId")
                         .HasColumnType("bigint");

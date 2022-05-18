@@ -34,6 +34,15 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
             }).AsNoTracking().FirstOrDefault(x => x.Id == id);
         }
 
+        public List<AccountViewModel> GetAccounts()
+        {
+            return _context.Accounts.Select(z => new AccountViewModel
+            {
+                Id = z.Id,
+                Fullname = z.Fullname,
+            }).ToList();
+        }
+
         public List<AccountViewModel> Search(AccountSearchModel searchModel)
         {
             var query = _context.Accounts.Include(x=>x.Role).Select(x => new AccountViewModel

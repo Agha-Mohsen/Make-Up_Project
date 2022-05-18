@@ -47,3 +47,11 @@ C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configurat
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\obj\Debug\net5.0\ref\ShopManagement.Configuration.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\AccountManagement.Domain.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\AccountManagement.Domain.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\ShopManagement.Configuration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb

@@ -34,7 +34,7 @@
                     <div id="productStockWarnings">
                         @foreach (var item in Model.CartItems.Where(x => !x.IsInStock))
                         {
-                            <div class="alert alert-warning" id="@item.Id">
+                            <div class="alert alert-danger" id="@item.Id">
                                 <i class="fa fa-warning"></i> کالای
                                 <strong>@item.Name</strong>
                                 در انبار کمتر از تعداد درخواستی موجود است.

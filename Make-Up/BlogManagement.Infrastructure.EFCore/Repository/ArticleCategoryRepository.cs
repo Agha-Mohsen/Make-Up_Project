@@ -20,7 +20,7 @@ namespace BlogManagement.Infrastructure.EFCore.Repository
         public string GetSlugById(long id)
         {
             return _context.ArticleCategories.Select(x => new {x.Id, x.Slug}).AsNoTracking()
-                .FirstOrDefault(x => x.Id == id).Slug;
+                .FirstOrDefault(x => x.Id == id)?.Slug;
         }
 
         public EditArticleCategory GetDetails(long id)

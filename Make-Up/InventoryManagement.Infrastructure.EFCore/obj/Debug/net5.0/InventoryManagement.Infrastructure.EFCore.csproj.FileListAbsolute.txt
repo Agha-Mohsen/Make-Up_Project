@@ -26,3 +26,9 @@ C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infra
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.EFCore\obj\Debug\net5.0\ref\InventoryManagement.Infrastructure.EFCore.dll
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.EFCore\obj\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.pdb
 C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.EFCore\obj\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.genruntimeconfig.cache
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Application.Contracts.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Domain.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
+C:\Users\Mohsen-Shah\source\repos\Make-Up\Code\Make-Up\InventoryManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Domain.pdb

@@ -1,4 +1,6 @@
 ﻿using _0_Framework.Infrastructure;
+using _01_MakeUpQuery.Contracts.Inventory;
+using _01_MakeUpQuery.Query;
 using InventoryManagement.Application;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
@@ -14,8 +16,10 @@ namespace InventoryManagement.Infrastructure.Configuration
     {
         public static void Configure(IServiceCollection services, string connectionString)
         {
-            services.AddTransient<IInventoryApplication, InventoryApplication>();
+            services.AddTransient<IInventoryQuery, InventoryQuery>();
+
             services.AddTransient<IInventoryRepository, InventoryRepository>();
+            services.AddTransient<IInventoryApplication, InventoryApplication>();
 
             services.AddTransient<IPermissionExposure, InventoryPermissionExposure>();
 

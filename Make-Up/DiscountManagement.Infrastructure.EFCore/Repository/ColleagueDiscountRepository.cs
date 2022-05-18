@@ -8,10 +8,11 @@ using ShopManagement.Infrastructure.EFCore;
 
 namespace DiscountManagement.Infrastructure.EFCore.Repository
 {
-    public class ColleagueDiscountRepository : RepositoryBase<long , ColleagueDiscount> , IColleagueDiscountRepository
+    public class ColleagueDiscountRepository : RepositoryBase<long, ColleagueDiscount>, IColleagueDiscountRepository
     {
         private readonly DiscountContext _context;
         private readonly ShopContext _shopContext;
+
         public ColleagueDiscountRepository(DiscountContext context, ShopContext shopContext) : base(context)
         {
             _context = context;
@@ -30,7 +31,7 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
 
         public List<ColleagueDiscountViewModel> Search(ColleagueDiscountSearchModel searchModel)
         {
-            var products = _shopContext.Products.Select(x => new {x.Id , x.Name});
+            var products = _shopContext.Products.Select(x => new { x.Id, x.Name });
             var query = _context.ColleagueDiscounts.Select(x => new ColleagueDiscountViewModel
             {
                 Id = x.Id,
@@ -45,8 +46,8 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
 
             var discount = query.OrderByDescending(x => x.Id).ToList();
 
-            discount.ForEach(discount=> 
-                discount.Product = products.FirstOrDefault(x=>x.Id == discount.ProductId)?.Name);
+            discount.ForEach(discount =>
+                discount.Product = products.FirstOrDefault(x => x.Id == discount.ProductId)?.Name);
 
             return discount;
         }

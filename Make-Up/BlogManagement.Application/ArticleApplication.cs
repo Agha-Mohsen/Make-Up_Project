@@ -3,8 +3,6 @@ using _0_Framework.Application;
 using BlogManagement.Application.Contracts.Article;
 using BlogManagement.Domain.ArticleAgg;
 using BlogManagement.Domain.ArticleCategoryAgg;
-using ArticleSearchModel = BlogManagement.Application.Contracts.Article.ArticleSearchModel;
-using ArticleViewModel = BlogManagement.Application.Contracts.Article.ArticleViewModel;
 
 namespace BlogManagement.Application
 {
@@ -62,7 +60,6 @@ namespace BlogManagement.Application
 
             var path = $"مقالات//{article.Category.Slug}//{slug}";
             var pictureName = _fileUploader.Upload(command.Picture, path);
-
 
             article.Edit(command.Title, command.ShortDescription, command.Description, pictureName,
                 command.PictureAlt, command.PictureTitle, publishDate, slug, command.MetaDescription,

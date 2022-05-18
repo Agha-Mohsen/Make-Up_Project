@@ -1,5 +1,6 @@
 ﻿@page
 @using _0_Framework.Application
+@using ShopManagement.Application.Contracts
 @model ServiceHost.Pages.CheckoutModel
 @{
     ViewData["Title"] = "تایید سبد خرید و پرداخت";
@@ -84,7 +85,7 @@
                             </div>
 
                             <div class="row">
-                                <@*div class="col-lg-6 col-12 d-flex">
+                                <div class="col-lg-6 col-12 d-flex">
                                     <div class="checkout-payment-method">
                                         <h4>نحوه پرداخت</h4>
                                         @foreach (var method in PaymentMethod.GetList())
@@ -96,7 +97,7 @@
                                             </div>
                                         }
                                     </div>
-                                </div>*@
+                                </div>
                                 <div class="col-lg-6 col-12 d-flex">
                                     <div class="cart-summary">
                                         <div class="cart-summary-wrap">

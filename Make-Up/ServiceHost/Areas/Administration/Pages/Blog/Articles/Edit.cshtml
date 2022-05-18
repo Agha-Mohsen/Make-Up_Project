@@ -1,8 +1,7 @@
 ﻿@page
 @model ServiceHost.Areas.Administration.Pages.Blog.Articles.EditModel
 @{
-    Layout = "Shared/_AdminLayout";
-    ViewData["Title"] = "ویرایش مقاله ";
+    //ViewData["Title"] = "ویرایش مقاله ";
 }
 
 <div class="row">
@@ -103,10 +102,10 @@
                                 <label asp-for="Command.Description" class="control-label">توضیحات</label>
                                 <textarea asp-for="Command.Description" class="form-control" id="BodyContent" ></textarea>
                                 <span asp-validation-for="Command.Description" class="error"></span>
+                                <input asp-for="Command.Id" type="hidden" value="@Model.Command.Id">
                             </div>
                         </div>
                     </div>
-                    <input asp-for="Command.Id" type="hidden" value="@Model.Command.Id"></input>
                     <button class="btn btn-success waves-effect waves-light m-b-5" type="submit">ویرایش</button>
                     <a asp-page="./Index" class="btn btn-warning waves-effect waves-light m-b-5">بازگشت</a>
                 </form>

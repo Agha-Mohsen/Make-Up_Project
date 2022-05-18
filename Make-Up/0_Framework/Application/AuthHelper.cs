@@ -62,6 +62,12 @@ namespace _0_Framework.Application
             return JsonConvert.DeserializeObject<List<int>>(permissions);
         }
 
+        public long CurrentAccountId()
+        {
+            return IsAuthenticated()
+                ? long.Parse(_contextAccessor.HttpContext.User.Claims.First(x => x.Type == "AccountId")?.Value)
+                : 0;
+        }
         public void Signin(AuthViewModel account)
         {
             var permissions = JsonConvert.SerializeObject(account.Permissions);
@@ -118,12 +124,7 @@ namespace _0_Framework.Application
         //    return JsonConvert.DeserializeObject<List<int>>(permissions);
         //}
 
-        //public long CurrentAccountId()
-        //{
-        //    return IsAuthenticated()
-        //        ? long.Parse(_contextAccessor.HttpContext.User.Claims.First(x => x.Type == "AccountId")?.Value)
-        //        : 0;
-        //}
+
 
         //public string CurrentAccountMobile()
         //{

@@ -82,7 +82,7 @@
                                         {
                                             <span class = "text-warning">در انتظار</span>
                                         }
-                                        else
+                                        @if(!item.IsCanceled && item.IsConfirmed)
                                         {
                                             <span class = "text-success">تایید شده</span>
                                         }
@@ -96,7 +96,7 @@
                                         @if (!item.IsConfirmed)
                                         {
                                             <a asp-page = "./Index" asp-page-handler = "Confirm" asp-route-id = "@item.Id"
-                                               class = "btn btn-success waves-effect waves-light m-b-5">
+                                              class = "btn btn-success waves-effect waves-light m-b-5">
                                                 فعال سازی
                                             </a>
                                         }
